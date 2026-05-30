@@ -1,0 +1,9 @@
+{
+  "algorithm": "insertion_sort",
+  "checkpoint_path": "/work/CLRS/renar_runs/insertion_sort_20260525_170358_026937471/checkpoints/mrenar_20260525_170358_057488989",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_insertion_sort_4_best_MLM.pkl",
+  "pred": 0.864140625,
+  "score": 0.864140625
+}

@@ -1,0 +1,18 @@
+{
+  "input_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "predictions_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/results/frontier_sudoku_builder/frontier_predictions_deepseek_v4pro_none_nvidia_stream25.json",
+  "model": "deepseek-ai/deepseek-v4-pro",
+  "request": {
+    "provider": "nvidia",
+    "reasoning_effort": "none",
+    "stream": true,
+    "max_tokens": 8192,
+    "temperature": 0
+  },
+  "num_examples": 6,
+  "parseable": 2,
+  "parseable_rate": 0.3333333333333333,
+  "exact_match": 0.0,
+  "cell_accuracy": 0.10699588477366255,
+  "valid_sudoku_rate": 0.0
+}

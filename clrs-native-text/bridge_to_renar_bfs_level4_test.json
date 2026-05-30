@@ -1,0 +1,9 @@
+{
+  "algorithm": "bfs",
+  "checkpoint_path": "/work/CLRS/renar_runs/checkpoints/mrenar_20260525_120026",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_bfs_4_best_MLM.pkl",
+  "pi": 0.813828125,
+  "score": 0.813828125
+}

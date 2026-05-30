@@ -1,0 +1,60 @@
+{
+  "input_json": "data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "task": "grid-parse",
+  "baseline_metrics_json": "results/test_pipeline_finetuned/pipeline_metrics_corrected2.json",
+  "baseline_pipeline_metrics": {
+    "stage": "finalize",
+    "bridge_output_json": "results/test_pipeline_finetuned/bridge_predictions_corrected2.json",
+    "trm_predictions_json": "results/test_pipeline_finetuned/trm_predictions_on_bridge_corrected2.json",
+    "bridge_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.044,
+      "cell_accuracy": 0.9690617283950511,
+      "given_accuracy": 0.9634085354382278,
+      "empty_accuracy": 0.9717630944605319,
+      "format_valid_rate": 1.0
+    },
+    "trm_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.096,
+      "cell_accuracy": 0.6363950617283952,
+      "format_valid_rate": 1.0,
+      "consistent_with_bridge_givens_rate": 0.268
+    }
+  },
+  "predictions_json": "results/frontier_sudoku_builder/frontier_grid_parse_corrected2.json",
+  "max_tokens": 2048,
+  "allow_digit_fallback": false,
+  "extra_body_by_model": {
+    "deepseek-ai/deepseek-v3-0324": {},
+    "MiniMaxAI/MiniMax-Text-01": {}
+  },
+  "models": {
+    "deepseek-ai/deepseek-v3-0324": {
+      "num_examples": 25,
+      "api_error_count": 25,
+      "parse_failure_count": 0,
+      "grid_metrics": {
+        "num_examples": 25,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.691358024691358,
+        "given_accuracy": 0.0,
+        "empty_accuracy": 1.0,
+        "format_valid_rate": 0.0
+      }
+    },
+    "MiniMaxAI/MiniMax-Text-01": {
+      "num_examples": 25,
+      "api_error_count": 25,
+      "parse_failure_count": 0,
+      "grid_metrics": {
+        "num_examples": 25,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.691358024691358,
+        "given_accuracy": 0.0,
+        "empty_accuracy": 1.0,
+        "format_valid_rate": 0.0
+      }
+    }
+  }
+}

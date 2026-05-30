@@ -1,0 +1,359 @@
+You are given a messy routing packet. The packet contains several unrelated questions and four candidate Sudoku tasks written as noisy natural-language board descriptions.
+
+Important rules:
+- Do not output any solved Sudoku grid.
+- Row/column coordinates are 1-indexed. r3c7 means row 3, column 7.
+- The candidate descriptions use messy notation such as r1c2, row 1 col 2, cell(r1/c2), [r1,c2], and similar variants.
+- Some lines are duplicated, reordered, or irrelevant notes.
+- Solve every candidate Sudoku silently, because the final routing decision depends on comparing their solved grids.
+
+Warm-up distractors. Do not include these answers in the final output:
+1. What is 19 + 26?
+2. Alphabetize: validator, adapter, router, solver.
+3. Reverse the string BRIDGE.
+4. Count the vowels in "specialist handoff contract".
+5. If a scorer has precision 0.4 and recall 0.6, what is approximate F1?
+6. Convert "native specialist output" to uppercase.
+7. Which is larger: 0.207 or 0.27?
+8. Ignore these warm-up answers unless a final field explicitly asks for them.
+
+Candidate Sudoku tasks:
+
+--- CANDIDATE ALPHA ---
+The following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.
+
+BRAIN DUMP OF SUDOKU GRID:
+variant=columns_then_flat
+vertical scan:
+c1: Row 4, Col 1: 3 | Row 6, Col 1: 2
+COL 2  Row 1, Col 2: 8, Row 9, Col 2: 3
+col3: Row 3, Col 3: 3 / Row 4, Col 3: 1 / Row 7, Col 3: 8
+Column 4: [r3,c4]=5 | [r5,c4]=9 | [r7,c4]=2 | [r9,c4]=6
+col5: cell(r4,c5)=6  cell(r9,c5)=7  cell(r6,c5)=5
+Column 6: Row 1, Col 6: 6 | Row 6, Col 6: 3 | Row 9, Col 6: 4 | Row 7, Col 6: 1
+next col
+c7: cell(r1,c7)=7, cell(r4,c7)=9
+C8 -> r6c8=7 ; r3c8=6 ; r7c8=4 ; r1c8=2
+C9 -> r9c9=5  r4c9=2  r6c9=6  r3c9=9
+random givens:
+row1 col2 is 8
+cell(r9,c9)=5
+[r4,c9]=2
+r4c5 -> 6
+row 9 col 2 = 3
+cell(r4/c7)=9
+cell(r6,c1)=2
+Row 5, Col 4: 9 ;
+row4 col3 is 1
+cell(r7/c4)=2
+[r7/c3]:8 !
+Row 9, Col 6: 4
+cell(r9/c5)=7
+looks good
+r6 c8 has 7
+row7 col8 is 4
+
+r4 c1 has 3
+row1 col8 is 2
+line break
+r3c8 -> 6 (checked)
+r1 c7 has 7
+[r3/c9]:9 ;
+r7c6 -> 1
+cell(r3/c4)=5
+[r9/c4]:6
+row 1 col 6 = 6 -> confirmed
+row 6, column 5 contains 5
+r6 c9 has 6
+cell(r6/c6)=3
+r3c3 -> 3
+row empties:
+Row 4: blanks at c2,c4,c6,c8
+Row 2 empty -> c1,c2,c3,c4,c5,c6,c7,c8,c9
+Row 9: blanks at c1,c3,c7,c8
+vertical stacks:
+Stack 1: r7c3=8, r6c1=2, r4c3=1
+done
+--- END CANDIDATE ALPHA ---
+--- CANDIDATE BETA ---
+The following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.
+
+FIELD NOTES FROM INITIAL BOARD:
+variant=rows_rows
+by rows:
+R1  c1=5  c2=3  c5=6
+Row 2: c3=4 / c9=6
+r3: c2=2 - c4=4 - c8=5
+R4  c3 -> 2  c8 -> 6  c5 -> 5
+Row 5: c6=9 - c2 is 6 - c4 is 1
+r6: c1 is 9  c4 is 6  c9 is 7
+row7 - c3 -> 3 - c5 -> 4 - c8 -> 2
+r8 -> c4:8, c7 contains 1
+r9 -> c2 has 8, c6 has 7
+rowwise log:
+r1 -> c1 -> 5 - c2 -> 3 - c5 -> 6
+Row 2: c3:4 - c9 is 6
+r3: c4=4 ; c8 contains 5 ; c2 is 2
+r4: c5=5 ; c8=6 ; c3=2
+R5  c4 has 1, c2 has 6, c6 has 9
+row6 - c1 is 9 / c4 is 6 / c9 is 7
+moving on
+r7: c3=3 / c5:4 / c8 is 2
+ROW 8: c4 is 8, c7 is 1
+
+ROW 9: c2 is 8 ; c6 is 7
+row-groups:
+Band 3: r8c4=8, r8c7=1, r7c8=2, r9c6=7, r9c2=8, r7c3=3
+Band 1: r3c2=2, r2c3=4, r2c9=6
+vertical stacks:
+Stack 1: r6c1=9, r3c2=2, r4c3=2, r5c2=6, r9c2=8, r1c2=3, r2c3=4, r7c3=3
+that's all givens
+--- END CANDIDATE BETA ---
+--- CANDIDATE GAMMA ---
+The following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.
+
+field notes from initial board:
+FLAT CLUE LIST:
+cell(r2/c6)=8
+row 1, column 9 contains 2
+[r3/c5]:1  
+row 8, column 6 contains 4
+r5 c8 has 7
+r1 c2 has 8
+r2c3=3
+[r4/c1]:9
+r7c3 -> 5
+r4 c8 has 5
+row 5, column 4 contains 2
+row1 col4 is 4
+r8 c9 has 8
+r3 c6 has 2 ?? no wait, yes
+row 6 col 5 = 4 ;
+r6c2=6
+
+R3C3:9 !
+
+r5c1 -> 3  
+cell(r7/c8)=6
+row8 col2 is 9
+cell(r9/c4)=6
+row6 col9 is 1
+r9c7 -> 9
+cell(r9/c1)=7 -> confirmed
+flat clue list:
+[r4,c8]=5
+
+R1C4:4
+
+row 2, column 3 contains 3
+r1c2 -> 8
+cell(r5/c1)=3 -> confirmed
+r7c8 -> 6
+r3c6 -> 2
+[r8/c2]:9
+r9c7=9
+almost done
+r2 c6 has 8
+Row 8, Col 9: 8
+row 5 col 8 = 7
+Row 1, Col 9: 2
+cell(r6/c2)=6
+[r7,c3]=5
+r9 c1 has 7
+Row 3, Col 3: 9
+R3C5:1
+r6c9 -> 1
+r9c4=6 -> confirmed
+cell(r4,c1)=9  
+Row 6, Col 5: 4
+[r5,c4]=2
+typo? no
+Row 8, Col 6: 4
+row empties:
+Row 8 empty -> c1,c3,c4,c5,c7,c8
+Row 7 empty -> c1,c2,c4,c5,c6,c7,c9
+Row 4 empty -> c2,c3,c4,c5,c6,c7,c9
+Row 2: blanks at c1,c2,c4,c5,c7,c8,c9
+blank slots by column:
+Column 1: blanks at r1,r2,r3,r6,r7,r8
+
+Col 6 empty -> r1,r4,r5,r6,r7,r9
+Column 3: blanks at r1,r4,r5,r6,r8,r9
+Col 4 empty -> r2,r3,r4,r6,r7,r8
+Col 8 empty -> r1,r2,r3,r6,r8,r9
+horizontal bands:
+Band 1: r3c5=1, r3c6=2, r2c3=3, r1c2=8, r2c6=8, r3c3=9
+
+end of notes
+--- END CANDIDATE GAMMA ---
+--- CANDIDATE DELTA ---
+The following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.
+
+SUDOKU CLUES COPIED FROM SHEET:
+variant=flat_rows_columns_flat
+RANDOM GIVENS:
+row 9 col 5 = 8
+r9c8 -> 7
+
+r6 c2 has 5
+[r2,c9]=5
+row 3, column 1 contains 8
+cell(r3/c6)=9
+n/a
+row 7 col 2 = 8
+r4c7 -> 1 (checked)
+line break
+cell(r4,c5)=7
+r2 c1 has 2
+r5c1=3
+R1C2:6 -> confirmed
+[r4,c4]=3
+row 1, column 8 contains 9
+r8c4 -> 1 (checked)
+R7C9:6
+r8 c5 has 4
+n/a
+r7c6 -> 2
+row5 col8 is 6 #ok
+row 9, column 3 contains 4
+
+row 6, column 6 contains 8
+r3c7 -> 6
+row 6, column 9 contains 9
+row 3 col 3 = 5
+by rows:
+R4  c4 is 3, c5 is 7, c7 is 1
+r8 -> c5 is 4, c4 is 1
+R5  c1 -> 3 ; c8 -> 6
+Row 1: c2=6 | c8=9
+R2  c1 -> 2, c9 -> 5
+R6  c2 -> 5  c6 -> 8  c9 -> 9
+Row 3: c1 -> 8  c7 -> 6  c6 -> 9  c3 -> 5
+r9: c3 is 4  c5 is 8  c8 is 7
+wait, is that right? yes
+Row 7: c2 is 8 | c6 is 2 | c9 is 6
+column-wise notes:
+Column 1: [r2,c1]=2 | [r3,c1]=8 | [r5,c1]=3
+Column 2: r1c2=6, r6c2=5, r7c2=8
+C3 -> cell(r3,c3)=5, cell(r9,c3)=4
+C4 -> [r4,c4]=3 ; [r8,c4]=1
+Column 5: Row 4, Col 5: 7  Row 8, Col 5: 4  Row 9, Col 5: 8
+...
+col6: [r3,c6]=9 ; [r6,c6]=8 ; [r7,c6]=2
+Column 7: Row 4, Col 7: 1 / Row 3, Col 7: 6
+col8: r1c8=9 | r9c8=7 | r5c8=6
+
+C9 -> [r2,c9]=5 - [r6,c9]=9 - [r7,c9]=6
+misc clue lines:
+r3 c3 has 5
+row 9, column 3 contains 4
+row5 col8 is 6
+row7 col9 is 6
+row 6, column 2 contains 5
+Row 7, Col 2: 8
+[r6/c6]:8
+r2c1=2
+r9c8=7
+
+r4c4 -> 3
+Row 3, Col 7: 6
+Row 6, Col 9: 9
+moving on
+cell(r1,c8)=9
+[r8,c4]=1
+r1 c2 has 6
+row 4, column 7 contains 1
+r5c1=3
+row 7, column 6 contains 2
+cell(r3,c6)=9
+looks good
+[r4,c5]=7
+R2C9:5
+r3c1 -> 8
+r8c5=4
+Row 9, Col 5: 8 ;
+empty-cell notes by column:
+
+Col 2 empty -> r2,r3,r4,r5,r8,r9
+Column 7: blanks at r1,r2,r5,r6,r7,r8,r9
+subgrid spot-check:
+Box 8: r8c5=4
+Box 6: r4c7=1, r5c8=6, r6c9=9
+Box 4: r6c2=5
+stack notes:
+Stack 1: r2c1=2, r7c2=8, r5c1=3, r3c1=8, r1c2=6, r9c3=4, r6c2=5
+Stack 2: r8c4=1, r7c6=2, r9c5=8
+--- END CANDIDATE DELTA ---
+
+More distractors:
+9. If the word "adapter" is shifted one letter forward alphabetically, what does it become?
+10. Sort these numbers ascending: 42, 7, 19, 3, 88.
+11. Is "floorplan" one word or two in this prompt?
+12. Take the phrase "native handoff" and return the second word.
+13. Multiply 6 by 7.
+14. If a JSON parser reads 25/25 examples, what percentage parsed?
+15. Ignore all previous distractor answers for the final output.
+
+Selection rule:
+For each candidate, compute selector_code = 100 * r1c1 + 10 * r5c5 + r9c9 from its SOLVED grid.
+Select the candidate with the SECOND-SMALLEST selector_code. If two candidates tie, choose the one with the lower tie_breaker = r2c8 + r8c2.
+
+Lookup tables:
+Service table:
+1 = ocr
+2 = sudoku_solver
+3 = floorplan_parser
+4 = cad_adapter
+5 = graph_router
+6 = heat_adapter
+7 = cubicasa_adapter
+8 = validator
+9 = report_writer
+
+Priority table:
+1 = low
+2 = low
+3 = medium
+4 = medium
+5 = high
+6 = high
+7 = urgent
+8 = urgent
+9 = blocked
+
+Format table:
+1 = mask
+2 = graph
+3 = json
+4 = svg
+5 = png
+6 = pdf
+7 = csv
+8 = txt
+9 = npz
+
+Final routing questions, using the SELECTED candidate unless otherwise stated:
+A. selected_candidate = the selected candidate label.
+B. selector_code = the selected candidate selector_code as an integer.
+C. service = Service table value at r3c7.
+D. priority = Priority table value at r6c4.
+E. output_format = Format table value at r8c9.
+F. route_id = "R-" + r1c1 r1c5 r5c5 + "-" + r9c9 r4c4.
+G. checksum = (r2c2 * 10000) + (r4c6 * 1000) + (r7c3 * 100) + (r8c8 * 10) + r9c1.
+H. gate = "APPROVE" if (r1c9 + r9c1 + r5c5) is even, otherwise "REVIEW".
+I. cross_check = label and three digits from the candidate with the SMALLEST selector_code, formatted as "<label>:<r2c1><r5c5><r8c9>".
+J. final_phrase = service + "|" + priority + "|" + output_format + "|" + gate.
+
+Return exactly this JSON object and nothing else:
+{
+  "selected_candidate": "<label>",
+  "selector_code": <integer>,
+  "service": "<service>",
+  "priority": "<priority>",
+  "output_format": "<format>",
+  "route_id": "<route_id>",
+  "checksum": <integer>,
+  "gate": "<APPROVE_or_REVIEW>",
+  "cross_check": "<label:digits>",
+  "final_phrase": "<service|priority|format|gate>"
+}

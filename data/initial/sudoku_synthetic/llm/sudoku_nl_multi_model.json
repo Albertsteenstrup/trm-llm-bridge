@@ -1,0 +1,482 @@
+[
+  {
+    "index": 0,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "7..3....9.8..2..4..6...1.....5...2....8....6.1....2..39...1...7...9.34...5...7...",
+    "solution": "712345689589726341463891725695134278238579164174682953946218537827953416351467892",
+    "rating": 13,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c1=7, r1c4=3, r1c9=9\nRow 2: r2c2=8, r2c5=2, r2c8=4\nRow 3: r3c2=6, r3c6=1\nRow 4: r4c3=5, r4c7=2\nRow 5: r5c3=8, r5c8=6\nRow 6: r6c1=1, r6c6=2, r6c9=3\nRow 7: r7c1=9, r7c5=1, r7c9=7\nRow 8: r8c4=9, r8c6=3, r8c7=4\nRow 9: r9c2=5, r9c6=7"
+  },
+  {
+    "index": 0,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "7..3....9.8..2..4..6...1.....5...2....8....6.1....2..39...1...7...9.34...5...7...",
+    "solution": "712345689589726341463891725695134278238579164174682953946218537827953416351467892",
+    "rating": 13,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c1=7, r1c4=3, r1c9=9\nRow 2: r2c2=8, r2c5=2, r2c8=4\nRow 3: r3c2=6, r3c6=1\nRow 4: r4c3=5, r4c7=2\nRow 5: r5c3=8, r5c8=6\nRow 6: r6c1=1, r6c6=2, r6c9=3\nRow 7: r7c1=9, r7c5=1, r7c9=7\nRow 8: r8c4=9, r8c6=3, r8c7=4\nRow 9: r9c2=5, r9c6=7"
+  },
+  {
+    "index": 0,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "7..3....9.8..2..4..6...1.....5...2....8....6.1....2..39...1...7...9.34...5...7...",
+    "solution": "712345689589726341463891725695134278238579164174682953946218537827953416351467892",
+    "rating": 13,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c1=7, r1c4=3, r1c9=9\nRow 2: r2c2=8, r2c5=2, r2c8=4\nRow 3: r3c2=6, r3c6=1\nRow 4: r4c3=5, r4c7=2\nRow 5: r5c3=8, r5c8=6\nRow 6: r6c1=1, r6c6=2, r6c9=3\nRow 7: r7c1=9, r7c5=1, r7c9=7\nRow 8: r8c4=9, r8c6=3, r8c7=4\nRow 9: r9c2=5, r9c6=7"
+  },
+  {
+    "index": 1,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "..357...45......3..9.....8....7..3..35..8..47.78..459....2.....8...9......76....9",
+    "solution": "183572964564819732792463185649725318351986247278134596915248673826397451437651829",
+    "rating": 40,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c3=3, r1c4=5, r1c5=7, r1c9=4\nRow 2: r2c1=5, r2c8=3\nRow 3: r3c2=9, r3c8=8\nRow 4: r4c4=7, r4c7=3\nRow 5: r5c1=3, r5c2=5, r5c5=8, r5c8=4, r5c9=7\nRow 6: r6c2=7, r6c3=8, r6c6=4, r6c7=5, r6c8=9\nRow 7: r7c4=2\nRow 8: r8c1=8, r8c5=9\nRow 9: r9c3=7, r9c4=6, r9c9=9"
+  },
+  {
+    "index": 1,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "..357...45......3..9.....8....7..3..35..8..47.78..459....2.....8...9......76....9",
+    "solution": "183572964564819732792463185649725318351986247278134596915248673826397451437651829",
+    "rating": 40,
+    "nl_description": "Here are the given digits for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c3=3, r1c4=5, r1c5=7, r1c9=4\nRow 2: r2c1=5, r2c7=3\nRow 3: r3c2=9, r3c7=8\nRow 4: r4c4=7, r4c7=3\nRow 5: r5c1=3, r5c2=5, r5c5=8, r5c8=4, r5c9=7\nRow 6: r6c2=7, r6c3=8, r6c6=4, r6c7=5, r6c8=9\nRow 7: r7c4=2\nRow 8: r8c1=8, r8c5=9\nRow 9: r9c3=7, r9c4=6, r9c9=9"
+  },
+  {
+    "index": 1,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "..357...45......3..9.....8....7..3..35..8..47.78..459....2.....8...9......76....9",
+    "solution": "183572964564819732792463185649725318351986247278134596915248673826397451437651829",
+    "rating": 40,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c3=3, r1c4=5, r1c5=7, r1c9=4\nRow 2: r2c1=5, r2c8=3\nRow 3: r3c2=9, r3c8=8\nRow 4: r4c4=7, r4c7=3\nRow 5: r5c1=3, r5c2=5, r5c5=8, r5c8=4, r5c9=7\nRow 6: r6c2=7, r6c3=8, r6c6=4, r6c7=5, r6c8=9\nRow 7: r7c4=2\nRow 8: r8c1=8, r8c5=9\nRow 9: r9c3=7, r9c4=6, r9c9=9"
+  },
+  {
+    "index": 2,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "....8.16....5....2....12...3...9..5.26......99..3.7.4.4.3...6.5...4.....82..519..",
+    "solution": "532984167781563492649712583374896251268145379915327846493278615156439728827651934",
+    "rating": 3,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c5=8, r1c7=1, r1c8=6\nRow 2: r2c4=5, r2c9=2\nRow 3: r3c5=1, r3c6=2\nRow 4: r4c1=3, r4c5=9, r4c8=5\nRow 5: r5c1=2, r5c2=6, r5c9=9\nRow 6: r6c1=9, r6c4=3, r6c6=7, r6c8=4\nRow 7: r7c1=4, r7c3=3, r7c7=6, r7c9=5\nRow 8: r8c4=4\nRow 9: r9c1=8, r9c2=2, r9c5=5, r9c6=1, r9c7=9"
+  },
+  {
+    "index": 2,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "....8.16....5....2....12...3...9..5.26......99..3.7.4.4.3...6.5...4.....82..519..",
+    "solution": "532984167781563492649712583374896251268145379915327846493278615156439728827651934",
+    "rating": 3,
+    "nl_description": "Here are the given cells for this Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c5=8, r1c7=1, r1c8=6\nRow 2: r2c4=5, r2c9=2\nRow 3: r3c5=1, r3c6=2\nRow 4: r4c1=3, r4c5=9, r4c8=5\nRow 5: r5c1=2, r5c2=6, r5c9=9\nRow 6: r6c1=9, r6c4=3, r6c6=7, r6c8=4\nRow 7: r7c1=4, r7c3=3, r7c7=6, r7c9=5\nRow 8: r8c4=4\nRow 9: r9c1=8, r9c2=2, r9c5=5, r9c6=1, r9c7=9"
+  },
+  {
+    "index": 2,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "....8.16....5....2....12...3...9..5.26......99..3.7.4.4.3...6.5...4.....82..519..",
+    "solution": "532984167781563492649712583374896251268145379915327846493278615156439728827651934",
+    "rating": 3,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c5=8, r1c7=1, r1c8=6\nRow 2: r2c4=5, r2c9=2\nRow 3: r3c5=1, r3c6=2\nRow 4: r4c1=3, r4c5=9, r4c8=5\nRow 5: r5c1=2, r5c2=6, r5c9=9\nRow 6: r6c1=9, r6c4=3, r6c6=7, r6c8=4\nRow 7: r7c1=4, r7c3=3, r7c7=6, r7c9=5\nRow 8: r8c4=4\nRow 9: r9c1=8, r9c2=2, r9c5=5, r9c6=1, r9c7=9"
+  },
+  {
+    "index": 3,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "...86...4.....92..9.8.4...7..4..8.7.7..4.6..5.5..7.....7.....3...5.8...6...1.7...",
+    "solution": "217863594543719268968542317634958172721436985859271643472695831195384726386127459",
+    "rating": 13,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c4=8, r1c5=6, r1c9=4\nRow 2: r2c6=9, r2c7=2\nRow 3: r3c1=9, r3c3=8, r3c5=4, r3c9=7\nRow 4: r4c3=4, r4c6=8, r4c8=7\nRow 5: r5c1=7, r5c4=4, r5c6=6, r5c9=5\nRow 6: r6c2=5\nRow 7: r7c2=7, r7c8=3\nRow 8: r8c3=5, r8c5=8, r8c9=6\nRow 9: r9c4=1, r9c6=7"
+  },
+  {
+    "index": 3,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "...86...4.....92..9.8.4...7..4..8.7.7..4.6..5.5..7.....7.....3...5.8...6...1.7...",
+    "solution": "217863594543719268968542317634958172721436985859271643472695831195384726386127459",
+    "rating": 13,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c4=8, r1c5=6, r1c9=4\nRow 2: r2c6=9, r2c7=2\nRow 3: r3c1=9, r3c3=8, r3c9=7\nRow 4: r4c3=4, r4c6=8, r4c8=7\nRow 5: r5c1=7, r5c4=4, r5c6=6, r5c9=5\nRow 6: r6c2=5, r6c5=7\nRow 7: r7c2=7, r7c8=3\nRow 8: r8c3=5, r8c5=8, r8c9=6\nRow 9: r9c4=1, r9c6=7"
+  },
+  {
+    "index": 3,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "...86...4.....92..9.8.4...7..4..8.7.7..4.6..5.5..7.....7.....3...5.8...6...1.7...",
+    "solution": "217863594543719268968542317634958172721436985859271643472695831195384726386127459",
+    "rating": 13,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c4=8, r1c5=6, r1c9=4\nRow 2: r2c6=9, r2c7=2\nRow 3: r3c1=9, r3c3=8, r3c5=4, r3c9=7\nRow 4: r4c3=4, r4c6=8, r4c8=7\nRow 5: r5c1=7, r5c4=4, r5c6=6, r5c9=5\nRow 6: r6c2=5, r6c5=7\nRow 7: r7c2=7, r7c8=3\nRow 8: r8c3=5, r8c5=8, r8c9=6\nRow 9: r9c4=1, r9c6=7"
+  },
+  {
+    "index": 4,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "...........7.6.1.216.....5.6...7.2.9..28.......9.....47.6..3....9..1.6.7.......4.",
+    "solution": "235781496987465132164239758651374289342896571879152364726943815493518627518627943",
+    "rating": 99,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 2: r2c3=7, r2c5=6, r2c7=1, r2c9=2\nRow 3: r3c1=1, r3c2=6, r3c8=5\nRow 4: r4c1=6, r4c5=7, r4c7=2, r4c9=9\nRow 5: r5c3=2, r5c4=8\nRow 6: r6c3=9, r6c9=4\nRow 7: r7c1=7, r7c3=6, r7c6=3\nRow 8: r8c2=9, r8c5=1, r8c7=6, r8c9=7\nRow 9: r9c8=4"
+  },
+  {
+    "index": 4,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "...........7.6.1.216.....5.6...7.2.9..28.......9.....47.6..3....9..1.6.7.......4.",
+    "solution": "235781496987465132164239758651374289342896571879152364726943815493518627518627943",
+    "rating": 99,
+    "nl_description": "Here are the given digits for this Sudoku puzzle.\n\nGivens by row:\nRow 2: r2c3=7, r2c5=6, r2c7=1, r2c9=2\nRow 3: r3c1=1, r3c2=6, r3c8=5\nRow 4: r4c1=6, r4c5=7, r4c7=2, r4c9=9\nRow 5: r5c3=2, r5c4=8\nRow 6: r6c3=9, r6c9=4\nRow 7: r7c1=7, r7c3=6, r7c6=3\nRow 8: r8c2=9, r8c5=1, r8c7=6, r8c9=7\nRow 9: r9c8=4"
+  },
+  {
+    "index": 4,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "...........7.6.1.216.....5.6...7.2.9..28.......9.....47.6..3....9..1.6.7.......4.",
+    "solution": "235781496987465132164239758651374289342896571879152364726943815493518627518627943",
+    "rating": 99,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 2: r2c3=7, r2c5=6, r2c7=1, r2c9=2\nRow 3: r3c1=1, r3c2=6, r3c8=5\nRow 4: r4c1=6, r4c5=7, r4c7=2, r4c9=9\nRow 5: r5c3=2, r5c4=8\nRow 6: r6c3=9, r6c9=4\nRow 7: r7c1=7, r7c3=6, r7c6=3\nRow 8: r8c2=9, r8c5=1, r8c7=6, r8c9=7\nRow 9: r9c8=4"
+  },
+  {
+    "index": 5,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "58.2.1....7..5......6..8.....9...6.563.....7....8...393.....9.77.8...35...5.3..68",
+    "solution": "583291746972654183146378592829743615631529874457816239364185927798462351215937468",
+    "rating": 21,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c1=5, r1c2=8, r1c4=2, r1c6=1\nRow 2: r2c2=7, r2c5=5\nRow 3: r3c3=6, r3c6=8\nRow 4: r4c3=9, r4c7=6, r4c9=5\nRow 5: r5c1=6, r5c2=3, r5c8=7\nRow 6: r6c4=8, r6c8=3, r6c9=9\nRow 7: r7c1=3, r7c7=9, r7c9=7\nRow 8: r8c1=7, r8c3=8, r8c7=3, r8c8=5\nRow 9: r9c3=5, r9c5=3, r9c8=6, r9c9=8"
+  },
+  {
+    "index": 5,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "58.2.1....7..5......6..8.....9...6.563.....7....8...393.....9.77.8...35...5.3..68",
+    "solution": "583291746972654183146378592829743615631529874457816239364185927798462351215937468",
+    "rating": 21,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c1=5, r1c2=8, r1c4=2, r1c6=1\nRow 2: r2c2=7, r2c5=5\nRow 3: r3c3=6, r3c6=8\nRow 4: r4c3=9, r4c7=6, r4c9=5\nRow 5: r5c1=6, r5c2=3, r5c8=7\nRow 6: r6c4=8, r6c8=3, r6c9=9\nRow 7: r7c1=3, r7c7=9, r7c9=7\nRow 8: r8c1=7, r8c3=8, r8c7=3, r8c8=5\nRow 9: r9c3=5, r9c5=3, r9c8=6, r9c9=8"
+  },
+  {
+    "index": 5,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "58.2.1....7..5......6..8.....9...6.563.....7....8...393.....9.77.8...35...5.3..68",
+    "solution": "583291746972654183146378592829743615631529874457816239364185927798462351215937468",
+    "rating": 21,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c1=5, r1c2=8, r1c4=2, r1c6=1\nRow 2: r2c2=7, r2c5=5\nRow 3: r3c3=6, r3c6=8\nRow 4: r4c3=9, r4c7=6, r4c9=5\nRow 5: r5c1=6, r5c2=3, r5c8=7\nRow 6: r6c4=8, r6c8=3, r6c9=9\nRow 7: r7c1=3, r7c7=9, r7c9=7\nRow 8: r8c1=7, r8c3=8, r8c7=3, r8c8=5\nRow 9: r9c3=5, r9c5=3, r9c8=6, r9c9=8"
+  },
+  {
+    "index": 6,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".....4..9..5....2..9.2..7....8.6.....3.7..9...1.3..5..1....72...7...3..5..21...9.",
+    "solution": "281574639745936128693218754528469371436751982917382546154897263879623415362145897",
+    "rating": 35,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c6=4, r1c9=9\nRow 2: r2c3=5, r2c8=2\nRow 3: r3c2=9, r3c4=2, r3c7=7\nRow 4: r4c3=8, r4c5=6\nRow 5: r5c2=3, r5c4=7, r5c7=9\nRow 6: r6c2=1, r6c4=3, r6c7=5\nRow 7: r7c1=1, r7c6=7, r7c7=2\nRow 8: r8c2=7, r8c6=3, r8c9=5\nRow 9: r9c3=2, r9c4=1, r9c8=9"
+  },
+  {
+    "index": 6,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".....4..9..5....2..9.2..7....8.6.....3.7..9...1.3..5..1....72...7...3..5..21...9.",
+    "solution": "281574639745936128693218754528469371436751982917382546154897263879623415362145897",
+    "rating": 35,
+    "nl_description": "Here are the given digits for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c6=4, r1c9=9\nRow 2: r2c3=5, r2c8=2\nRow 3: r3c2=9, r3c4=2, r3c7=7\nRow 4: r4c3=8, r4c5=6\nRow 5: r5c2=3, r5c4=7, r5c7=9\nRow 6: r6c2=1, r6c4=3, r6c7=5\nRow 7: r7c1=1, r7c6=7, r7c7=2\nRow 8: r8c2=7, r8c6=3, r8c9=5\nRow 9: r9c3=2, r9c4=1, r9c8=9"
+  },
+  {
+    "index": 6,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".....4..9..5....2..9.2..7....8.6.....3.7..9...1.3..5..1....72...7...3..5..21...9.",
+    "solution": "281574639745936128693218754528469371436751982917382546154897263879623415362145897",
+    "rating": 35,
+    "nl_description": "The following are the given numbers in the Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c6=4, r1c9=9\nRow 2: r2c3=5, r2c8=2\nRow 3: r3c2=9, r3c4=2, r3c7=7\nRow 4: r4c3=8, r4c5=6\nRow 5: r5c2=3, r5c4=7, r5c7=9\nRow 6: r6c2=1, r6c4=3, r6c7=5\nRow 7: r7c1=1, r7c6=7, r7c7=2\nRow 8: r8c2=7, r8c6=3, r8c9=5\nRow 9: r9c3=2, r9c4=1, r9c8=9"
+  },
+  {
+    "index": 7,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "..5.3.........1.2.3..7...4.87.59.....4......9...6...8.9...7..........273.83..2.6.",
+    "solution": "215438697467951328398726541872594136641283759539617482926375814154869273783142965",
+    "rating": 4,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c3=5, r1c5=3\nRow 2: r2c6=1, r2c8=2\nRow 3: r3c1=3, r3c4=7, r3c8=4\nRow 4: r4c1=8, r4c2=7, r4c4=5, r4c5=9\nRow 5: r5c2=4, r5c9=9\nRow 6: r6c4=6, r6c8=8\nRow 7: r7c1=9, r7c5=7\nRow 8: r8c7=2, r8c8=7, r8c9=3\nRow 9: r9c2=8, r9c3=3, r9c6=2, r9c8=6"
+  },
+  {
+    "index": 7,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "..5.3.........1.2.3..7...4.87.59.....4......9...6...8.9...7..........273.83..2.6.",
+    "solution": "215438697467951328398726541872594136641283759539617482926375814154869273783142965",
+    "rating": 4,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c3=5, r1c5=3\nRow 2: r2c6=1, r2c8=2\nRow 3: r3c1=3, r3c4=7, r3c8=4\nRow 4: r4c1=8, r4c2=7, r4c4=5, r4c5=9\nRow 5: r5c2=4, r5c9=9\nRow 6: r6c4=6, r6c8=8\nRow 7: r7c1=9, r7c5=7\nRow 8: r8c7=2, r8c8=7, r8c9=3\nRow 9: r9c2=8, r9c3=3, r9c6=2, r9c8=6"
+  },
+  {
+    "index": 7,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "..5.3.........1.2.3..7...4.87.59.....4......9...6...8.9...7..........273.83..2.6.",
+    "solution": "215438697467951328398726541872594136641283759539617482926375814154869273783142965",
+    "rating": 4,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c3=5, r1c5=3\nRow 2: r2c6=1, r2c8=2\nRow 3: r3c1=3, r3c4=7, r3c8=4\nRow 4: r4c1=8, r4c2=7, r4c4=5, r4c5=9\nRow 5: r5c2=4, r5c9=9\nRow 6: r6c4=6, r6c8=8\nRow 7: r7c1=9, r7c5=7\nRow 8: r8c7=2, r8c8=7, r8c9=3\nRow 9: r9c2=8, r9c3=3, r9c6=2, r9c8=6"
+  },
+  {
+    "index": 8,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".6......21......3.5.394....73.....1...2...7......2..63..1.3..56..6..71..25...1...",
+    "solution": "967318542124576938583942671735684219642193785819725463471239856396857124258461397",
+    "rating": 6,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c2=6, r1c9=2\nRow 2: r2c1=1, r2c8=3\nRow 3: r3c2=5, r3c3=3, r3c4=9, r3c5=4\nRow 4: r4c1=7, r4c2=3, r4c8=1\nRow 5: r5c3=2, r5c7=7\nRow 6: r6c7=7, r6c8=6, r6c9=3\nRow 7: r7c3=1, r7c5=3, r7c8=5, r7c9=6\nRow 8: r8c3=6, r8c6=7, r8c7=1\nRow 9: r9c1=2, r9c2=5, r9c6=1"
+  },
+  {
+    "index": 8,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".6......21......3.5.394....73.....1...2...7......2..63..1.3..56..6..71..25...1...",
+    "solution": "967318542124576938583942671735684219642193785819725463471239856396857124258461397",
+    "rating": 6,
+    "nl_description": "Here are the given digits for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c2=6, r1c9=2\nRow 2: r2c1=1, r2c8=3\nRow 3: r3c1=5, r3c3=3, r3c4=9, r3c5=4\nRow 4: r4c1=7, r4c2=3, r4c8=1\nRow 5: r5c3=2, r5c7=7\nRow 6: r6c5=2, r6c8=6, r6c9=3\nRow 7: r7c3=1, r7c5=3, r7c8=5, r7c9=6\nRow 8: r8c3=6, r8c6=7, r8c7=1\nRow 9: r9c1=2, r9c2=5, r9c6=1"
+  },
+  {
+    "index": 8,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".6......21......3.5.394....73.....1...2...7......2..63..1.3..56..6..71..25...1...",
+    "solution": "967318542124576938583942671735684219642193785819725463471239856396857124258461397",
+    "rating": 6,
+    "nl_description": "The following are the given numbers in the Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c2=6, r1c9=2\nRow 2: r2c1=1, r2c8=3\nRow 3: r3c1=5, r3c3=3, r3c4=9, r3c5=4\nRow 4: r4c1=7, r4c2=3, r4c8=1\nRow 5: r5c3=2, r5c7=7\nRow 6: r6c5=2, r6c8=6, r6c9=3\nRow 7: r7c3=1, r7c5=3, r7c8=5, r7c9=6\nRow 8: r8c3=6, r8c6=7, r8c7=1\nRow 9: r9c1=2, r9c2=5, r9c6=1"
+  },
+  {
+    "index": 9,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "..2..54.....32..1.7..94...2..4.3.5.9.6..............3..5..9..8.....5...1..92..3..",
+    "solution": "912865473486327915735941862874136529263579148591482736157693284328754691649218357",
+    "rating": 38,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c3=2, r1c6=5, r1c7=4\nRow 2: r2c4=3, r2c5=2, r2c8=1\nRow 3: r3c1=7, r3c4=9, r3c5=4, r3c9=2\nRow 4: r4c3=4, r4c5=3, r4c7=5, r4c9=9\nRow 5: r5c2=6\nRow 6: r6c8=3\nRow 7: r7c2=5, r7c5=9, r7c8=8\nRow 8: r8c5=5, r8c9=1\nRow 9: r9c3=9, r9c4=2, r9c7=3"
+  },
+  {
+    "index": 9,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "..2..54.....32..1.7..94...2..4.3.5.9.6..............3..5..9..8.....5...1..92..3..",
+    "solution": "912865473486327915735941862874136529263579148591482736157693284328754691649218357",
+    "rating": 38,
+    "nl_description": "Here are the given digits for this Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c3=2, r1c6=5, r1c7=4\nRow 2: r2c4=3, r2c5=2, r2c8=1\nRow 3: r3c1=7, r3c4=9, r3c5=4, r3c9=2\nRow 4: r4c3=4, r4c5=3, r4c7=5, r4c9=9\nRow 5: r5c2=6\nRow 6: r6c8=3\nRow 7: r7c2=5, r7c5=9, r7c8=8\nRow 8: r8c5=5, r8c9=1\nRow 9: r9c3=9, r9c4=2, r9c7=3"
+  },
+  {
+    "index": 9,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "..2..54.....32..1.7..94...2..4.3.5.9.6..............3..5..9..8.....5...1..92..3..",
+    "solution": "912865473486327915735941862874136529263579148591482736157693284328754691649218357",
+    "rating": 38,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c3=2, r1c6=5, r1c7=4\nRow 2: r2c4=3, r2c5=2, r2c8=1\nRow 3: r3c1=7, r3c4=9, r3c5=4, r3c9=2\nRow 4: r4c3=4, r4c5=3, r4c7=5, r4c9=9\nRow 5: r5c2=6\nRow 6: r6c8=3\nRow 7: r7c2=5, r7c5=9, r7c8=8\nRow 8: r8c5=5, r8c9=1\nRow 9: r9c3=9, r9c4=2, r9c7=3"
+  },
+  {
+    "index": 10,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".2....96...9.....14.8.......7264..399....37.63..........6.7...8...2.5.1.2.78.....",
+    "solution": "725138964639457281418962375572641839981523746364789152196374528843295617257816493",
+    "rating": 6,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c2=2, r1c7=9, r1c8=6\nRow 2: r2c3=9, r2c9=1\nRow 3: r3c1=4, r3c3=8\nRow 4: r4c2=7, r4c3=2, r4c4=6, r4c5=4, r4c8=3, r4c9=9\nRow 5: r5c1=9, r5c6=3, r5c7=7, r5c9=6\nRow 6: r6c1=3\nRow 7: r7c3=6, r7c5=7, r7c9=8\nRow 8: r8c4=2, r8c6=5, r8c8=1\nRow 9: r9c1=2, r9c3=7, r9c4=8"
+  },
+  {
+    "index": 10,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".2....96...9.....14.8.......7264..399....37.63..........6.7...8...2.5.1.2.78.....",
+    "solution": "725138964639457281418962375572641839981523746364789152196374528843295617257816493",
+    "rating": 6,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c2=2, r1c7=9, r1c8=6\nRow 2: r2c3=9, r2c9=1\nRow 3: r3c1=4, r3c3=8\nRow 4: r4c2=7, r4c3=2, r4c4=6, r4c5=4, r4c8=3, r4c9=9\nRow 5: r5c1=9, r5c6=3, r5c7=7, r5c9=6\nRow 6: r6c1=3\nRow 7: r7c3=6, r7c5=7, r7c9=8\nRow 8: r8c4=2, r8c6=5, r8c8=1\nRow 9: r9c1=2, r9c3=7, r9c4=8"
+  },
+  {
+    "index": 10,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".2....96...9.....14.8.......7264..399....37.63..........6.7...8...2.5.1.2.78.....",
+    "solution": "725138964639457281418962375572641839981523746364789152196374528843295617257816493",
+    "rating": 6,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c2=2, r1c7=9, r1c8=6\nRow 2: r2c3=9, r2c9=1\nRow 3: r3c1=4, r3c3=8\nRow 4: r4c2=7, r4c3=2, r4c4=6, r4c5=4, r4c8=3, r4c9=9\nRow 5: r5c1=9, r5c6=3, r5c7=7, r5c9=6\nRow 6: r6c1=3\nRow 7: r7c3=6, r7c5=7, r7c9=8\nRow 8: r8c4=2, r8c6=5, r8c8=1\nRow 9: r9c1=2, r9c3=7, r9c4=8"
+  },
+  {
+    "index": 11,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "....43....4.1.57..6..9...1.........1.8.4...7.1...9...8....3..4.4.2.1..5..1.5....7",
+    "solution": "571643892249185763638972514794358621386421975125796438857239146462817359913564287",
+    "rating": 45,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c5=4, r1c6=3\nRow 2: r2c2=4, r2c4=1, r2c6=5, r2c7=7\nRow 3: r3c1=6, r3c4=9, r3c8=1\nRow 4: r4c9=1\nRow 5: r5c2=8, r5c4=4, r5c8=7\nRow 6: r6c1=1, r6c5=9, r6c9=8\nRow 7: r7c5=3, r7c8=4\nRow 8: r8c1=4, r8c3=2, r8c5=1, r8c8=5\nRow 9: r9c2=1, r9c4=5, r9c9=7"
+  },
+  {
+    "index": 11,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "....43....4.1.57..6..9...1.........1.8.4...7.1...9...8....3..4.4.2.1..5..1.5....7",
+    "solution": "571643892249185763638972514794358621386421975125796438857239146462817359913564287",
+    "rating": 45,
+    "nl_description": "Here are the given digits for this Sudoku puzzle.\n\n**Givens by row:**\nRow 1: r1c5=4, r1c6=3\nRow 2: r2c2=4, r2c4=1, r2c6=5, r2c7=7\nRow 3: r3c1=6, r3c4=9, r3c8=1\nRow 4: r4c9=1\nRow 5: r5c2=8, r5c4=4, r5c8=7\nRow 6: r6c1=1, r6c5=9, r6c9=8\nRow 7: r7c5=3, r7c8=4\nRow 8: r8c1=4, r8c3=2, r8c5=1, r8c8=5\nRow 9: r9c2=1, r9c4=5, r9c9=7"
+  },
+  {
+    "index": 11,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "....43....4.1.57..6..9...1.........1.8.4...7.1...9...8....3..4.4.2.1..5..1.5....7",
+    "solution": "571643892249185763638972514794358621386421975125796438857239146462817359913564287",
+    "rating": 45,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c5=4, r1c6=3\nRow 2: r2c2=4, r2c4=1, r2c6=5, r2c7=7\nRow 3: r3c1=6, r3c4=9, r3c8=1\nRow 4: r4c9=1\nRow 5: r5c2=8, r5c4=4, r5c8=7\nRow 6: r6c1=1, r6c5=9, r6c9=8\nRow 7: r7c5=3, r7c8=4\nRow 8: r8c1=4, r8c3=2, r8c5=1, r8c8=5\nRow 9: r9c2=1, r9c4=5, r9c9=7"
+  },
+  {
+    "index": 12,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "6..3...7.....4...9.5..7.2..8.5.......1....8..2....3.4...12....6.2.6..9..4...3..2.",
+    "solution": "684329571172546389953871264845962713316457892297183645731298456528614937469735128",
+    "rating": 29,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c1=6, r1c4=3, r1c8=7\nRow 2: r2c5=4, r2c9=9\nRow 3: r3c2=5, r3c5=7, r3c7=2\nRow 4: r4c1=8, r4c3=5\nRow 5: r5c2=1, r5c7=8\nRow 6: r6c1=2, r6c6=3, r6c8=4\nRow 7: r7c3=1, r7c4=2, r7c9=6\nRow 8: r8c2=2, r8c4=6, r8c7=9\nRow 9: r9c1=4, r9c5=3, r9c8=2"
+  },
+  {
+    "index": 12,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "6..3...7.....4...9.5..7.2..8.5.......1....8..2....3.4...12....6.2.6..9..4...3..2.",
+    "solution": "684329571172546389953871264845962713316457892297183645731298456528614937469735128",
+    "rating": 29,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle.\n\n**Givens by row:**\nRow 1: r1c1=6, r1c4=3, r1c8=7\nRow 2: r2c5=4, r2c9=9\nRow 3: r3c2=5, r3c5=7, r3c7=2\nRow 4: r4c1=8, r4c3=5\nRow 5: r5c2=1, r5c7=8\nRow 6: r6c1=2, r6c6=3, r6c8=4\nRow 7: r7c3=1, r7c4=2, r7c9=6\nRow 8: r8c2=2, r8c4=6, r8c7=9\nRow 9: r9c1=4, r9c5=3, r9c8=2"
+  },
+  {
+    "index": 12,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "6..3...7.....4...9.5..7.2..8.5.......1....8..2....3.4...12....6.2.6..9..4...3..2.",
+    "solution": "684329571172546389953871264845962713316457892297183645731298456528614937469735128",
+    "rating": 29,
+    "nl_description": "The following are the given numbers in the Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c1=6, r1c4=3, r1c8=7\nRow 2: r2c5=4, r2c9=9\nRow 3: r3c2=5, r3c5=7, r3c7=2\nRow 4: r4c1=8, r4c3=5\nRow 5: r5c2=1, r5c7=8\nRow 6: r6c1=2, r6c6=3, r6c8=4\nRow 7: r7c3=1, r7c4=2, r7c9=6\nRow 8: r8c2=2, r8c4=6, r8c7=9\nRow 9: r9c1=4, r9c5=3, r9c8=2"
+  },
+  {
+    "index": 13,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".456..9...8.7.3.563.7...8......81.....8..5763259.6.4....4...57...1..4.2..9..123..",
+    "solution": "145628937982743156367159842673481295418295763259367418824936571531874629796512384",
+    "rating": 0,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c2=4, r1c3=5, r1c4=6, r1c7=9\nRow 2: r2c2=8, r2c4=7, r2c6=3, r2c8=5, r2c9=6\nRow 3: r3c1=3, r3c3=7, r3c7=8\nRow 4: r4c5=8, r4c6=1\nRow 5: r5c3=8, r5c6=5, r5c7=7, r5c8=6, r5c9=3\nRow 6: r6c1=2, r6c2=5, r6c3=9, r6c5=6, r6c7=4\nRow 7: r7c3=4, r7c7=5, r7c8=7\nRow 8: r8c3=1, r8c6=4, r8c8=2\nRow 9: r9c2=9, r9c5=1, r9c6=2, r9c7=3"
+  },
+  {
+    "index": 13,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".456..9...8.7.3.563.7...8......81.....8..5763259.6.4....4...57...1..4.2..9..123..",
+    "solution": "145628937982743156367159842673481295418295763259367418824936571531874629796512384",
+    "rating": 0,
+    "nl_description": "Here are the given numbers in the puzzle.\n\nGivens by row:\nRow 1: r1c2=4, r1c3=5, r1c4=6, r1c7=9\nRow 2: r2c2=8, r2c4=7, r2c6=3, r2c8=5, r2c9=6\nRow 3: r3c1=3, r3c3=7, r3c7=8\nRow 4: r4c5=8, r4c6=1\nRow 5: r5c3=8, r5c6=5, r5c7=7, r5c8=6, r5c9=3\nRow 6: r6c1=2, r6c2=5, r6c3=9, r6c5=6, r6c7=4\nRow 7: r7c3=4, r7c7=5, r7c8=7\nRow 8: r8c3=1, r8c6=4, r8c8=2\nRow 9: r9c2=9, r9c5=1, r9c6=2, r9c7=3"
+  },
+  {
+    "index": 13,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".456..9...8.7.3.563.7...8......81.....8..5763259.6.4....4...57...1..4.2..9..123..",
+    "solution": "145628937982743156367159842673481295418295763259367418824936571531874629796512384",
+    "rating": 0,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c2=4, r1c3=5, r1c4=6, r1c7=9\nRow 2: r2c2=8, r2c4=7, r2c6=3, r2c8=5, r2c9=6\nRow 3: r3c1=3, r3c3=7, r3c7=8\nRow 4: r4c5=8, r4c6=1\nRow 5: r5c3=8, r5c6=5, r5c7=7, r5c8=6, r5c9=3\nRow 6: r6c1=2, r6c2=5, r6c3=9, r6c5=6, r6c7=4\nRow 7: r7c3=4, r7c7=5, r7c8=7\nRow 8: r8c3=1, r8c6=4, r8c8=2\nRow 9: r9c2=9, r9c5=1, r9c6=2, r9c7=3"
+  },
+  {
+    "index": 14,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "..1..723.9..1.......7..86..5......4...6..38...1............2.8.....6.3....837...2",
+    "solution": "861597234932146758457238619583621947796453821214789563375912486129864375648375192",
+    "rating": 7,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c3=1, r1c6=7, r1c7=2, r1c8=3\nRow 2: r2c1=9, r2c4=1\nRow 3: r3c3=7, r3c6=8, r3c7=6\nRow 4: r4c1=5, r4c8=4\nRow 5: r5c3=6, r5c6=3, r5c7=8\nRow 6: r6c2=1\nRow 7: r7c6=2, r7c8=8\nRow 8: r8c5=6, r8c7=3\nRow 9: r9c3=8, r9c4=3, r9c5=7, r9c9=2"
+  },
+  {
+    "index": 14,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "..1..723.9..1.......7..86..5......4...6..38...1............2.8.....6.3....837...2",
+    "solution": "861597234932146758457238619583621947796453821214789563375912486129864375648375192",
+    "rating": 7,
+    "nl_description": "Here are the given digits in the puzzle.\n\nGivens by row:\nRow 1: r1c3=1, r1c6=7, r1c7=2, r1c8=3\nRow 2: r2c1=9, r2c4=1\nRow 3: r3c3=7, r3c6=8, r3c7=6\nRow 4: r4c1=5, r4c8=4\nRow 5: r5c3=6, r5c6=3, r5c7=8\nRow 6: r6c2=1\nRow 7: r7c6=2, r7c8=8\nRow 8: r8c5=6, r8c7=3\nRow 9: r9c3=8, r9c4=3, r9c5=7, r9c9=2"
+  },
+  {
+    "index": 14,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "..1..723.9..1.......7..86..5......4...6..38...1............2.8.....6.3....837...2",
+    "solution": "861597234932146758457238619583621947796453821214789563375912486129864375648375192",
+    "rating": 7,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c3=1, r1c6=7, r1c7=2, r1c8=3\nRow 2: r2c1=9, r2c4=1\nRow 3: r3c3=7, r3c6=8, r3c7=6\nRow 4: r4c1=5, r4c8=4\nRow 5: r5c3=6, r5c6=3, r5c7=8\nRow 6: r6c2=1\nRow 7: r7c6=2, r7c8=8\nRow 8: r8c5=6, r8c7=3\nRow 9: r9c3=8, r9c4=3, r9c5=7, r9c9=2"
+  },
+  {
+    "index": 15,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "6...7..5.........98.34..2........8..78...1..55......6...79.36...35.621......4...2",
+    "solution": "691278354254316789873495216346529871789631425512784963127953648435862197968147532",
+    "rating": 1,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c1=6, r1c5=7, r1c8=5\nRow 2: r2c9=9\nRow 3: r3c1=8, r3c3=3, r3c4=4, r3c7=2\nRow 4: r4c7=8\nRow 5: r5c1=7, r5c2=8, r5c6=1, r5c9=5\nRow 6: r6c1=5, r6c8=6\nRow 7: r7c3=7, r7c4=9, r7c6=3, r7c7=6\nRow 8: r8c2=3, r8c3=5, r8c5=6, r8c6=2, r8c7=1\nRow 9: r9c5=4, r9c9=2"
+  },
+  {
+    "index": 15,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "6...7..5.........98.34..2........8..78...1..55......6...79.36...35.621......4...2",
+    "solution": "691278354254316789873495216346529871789631425512784963127953648435862197968147532",
+    "rating": 1,
+    "nl_description": "Here are the given numbers for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c1=6, r1c5=7, r1c8=5\nRow 2: r2c9=9\nRow 3: r3c1=8, r3c3=3, r3c4=4, r3c7=2\nRow 4: r4c7=8\nRow 5: r5c1=7, r5c2=8, r5c6=1, r5c9=5\nRow 6: r6c1=5, r6c8=6\nRow 7: r7c3=7, r7c4=9, r7c6=3, r7c7=6\nRow 8: r8c2=3, r8c3=5, r8c5=6, r8c6=2, r8c7=1\nRow 9: r9c5=4, r9c9=2"
+  },
+  {
+    "index": 15,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "6...7..5.........98.34..2........8..78...1..55......6...79.36...35.621......4...2",
+    "solution": "691278354254316789873495216346529871789631425512784963127953648435862197968147532",
+    "rating": 1,
+    "nl_description": "The following are the given numbers in the Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c1=6, r1c5=7, r1c8=5\nRow 2: r2c9=9\nRow 3: r3c1=8, r3c3=3, r3c4=4, r3c7=2\nRow 4: r4c7=8\nRow 5: r5c1=7, r5c2=8, r5c6=1, r5c9=5\nRow 6: r6c1=5, r6c8=6\nRow 7: r7c3=7, r7c4=9, r7c6=3, r7c7=6\nRow 8: r8c2=3, r8c3=5, r8c5=6, r8c6=2, r8c7=1\nRow 9: r9c5=4, r9c9=2"
+  },
+  {
+    "index": 16,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".2....67...96.....6...7...9..1..3...8...42..74...9...5....8.79.........49..4..58.",
+    "solution": "324519678759638421618274359291753846865142937437896215146385792583927164972461583",
+    "rating": 11,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c2=2, r1c7=6, r1c8=7\nRow 2: r2c3=9, r2c4=6\nRow 3: r3c1=6, r3c5=7, r3c9=9\nRow 4: r4c3=1, r4c6=3\nRow 5: r5c1=8, r5c5=4, r5c6=2, r5c9=7\nRow 6: r6c1=4, r6c5=9, r6c9=5\nRow 7: r7c5=8, r7c7=7, r7c8=9\nRow 8: r8c9=4\nRow 9: r9c1=9, r9c4=4, r9c7=5, r9c8=8"
+  },
+  {
+    "index": 16,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".2....67...96.....6...7...9..1..3...8...42..74...9...5....8.79.........49..4..58.",
+    "solution": "324519678759638421618274359291753846865142937437896215146385792583927164972461583",
+    "rating": 11,
+    "nl_description": "Here are the given numbers for this Sudoku puzzle.\n\n**Givens by row:**\nRow 1: r1c2=2, r1c7=6, r1c8=7\nRow 2: r2c3=9, r2c4=6\nRow 3: r3c1=6, r3c5=7, r3c9=9\nRow 4: r4c3=1, r4c6=3\nRow 5: r5c1=8, r5c5=4, r5c6=2, r5c9=7\nRow 6: r6c1=4, r6c5=9, r6c9=5\nRow 7: r7c5=8, r7c7=7, r7c8=9\nRow 8: r8c9=4\nRow 9: r9c1=9, r9c4=4, r9c7=5, r9c8=8"
+  },
+  {
+    "index": 16,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".2....67...96.....6...7...9..1..3...8...42..74...9...5....8.79.........49..4..58.",
+    "solution": "324519678759638421618274359291753846865142937437896215146385792583927164972461583",
+    "rating": 11,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c2=2, r1c7=6, r1c8=7\nRow 2: r2c3=9, r2c4=6\nRow 3: r3c1=6, r3c5=7, r3c9=9\nRow 4: r4c3=1, r4c6=3\nRow 5: r5c1=8, r5c5=4, r5c6=2, r5c9=7\nRow 6: r6c1=4, r6c5=9, r6c9=5\nRow 7: r7c5=8, r7c7=7, r7c8=9\nRow 8: r8c9=4\nRow 9: r9c1=9, r9c4=4, r9c7=5, r9c8=8"
+  },
+  {
+    "index": 17,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".7..2.......83.1...3.1.72.......142...3.827......4..389.5...31..1.4...7.......8..",
+    "solution": "178624593296835147534197286689371425453982761721546938945768312812453679367219854",
+    "rating": 38,
+    "nl_description": "This Sudoku puzzle contains the following pre-filled clues:\n\nGivens by row:\nRow 1: r1c2=7, r1c5=2\nRow 2: r2c4=8, r2c5=3, r2c7=1\nRow 3: r3c2=3, r3c4=1, r3c6=7, r3c7=2\nRow 4: r4c6=1, r4c7=4, r4c8=2\nRow 5: r5c3=3, r5c5=8, r5c6=2, r5c7=7\nRow 6: r6c7=3, r6c8=3, r6c9=8\nRow 7: r7c1=9, r7c3=5, r7c7=3, r7c8=1\nRow 8: r8c2=1, r8c4=4, r8c8=7\nRow 9: r9c7=8"
+  },
+  {
+    "index": 17,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".7..2.......83.1...3.1.72.......142...3.827......4..389.5...31..1.4...7.......8..",
+    "solution": "178624593296835147534197286689371425453982761721546938945768312812453679367219854",
+    "rating": 38,
+    "nl_description": "Here are the given digits in the puzzle.\n\nGivens by row:\nRow 1: r1c2=7, r1c5=2\nRow 2: r2c4=8, r2c5=3, r2c7=1\nRow 3: r3c2=3, r3c4=1, r3c6=7, r3c7=2\nRow 4: r4c6=1, r4c7=4, r4c8=2\nRow 5: r5c3=3, r5c5=8, r5c6=2, r5c7=7\nRow 6: r6c5=4, r6c8=3, r6c9=8\nRow 7: r7c1=9, r7c3=5, r7c7=3, r7c8=1\nRow 8: r8c2=1, r8c4=4, r8c8=7\nRow 9: r9c7=8"
+  },
+  {
+    "index": 17,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".7..2.......83.1...3.1.72.......142...3.827......4..389.5...31..1.4...7.......8..",
+    "solution": "178624593296835147534197286689371425453982761721546938945768312812453679367219854",
+    "rating": 38,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c2=7, r1c5=2\nRow 2: r2c4=8, r2c5=3, r2c7=1\nRow 3: r3c2=3, r3c4=1, r3c6=7, r3c7=2\nRow 4: r4c6=1, r4c7=4, r4c8=2\nRow 5: r5c3=3, r5c5=8, r5c6=2, r5c7=7\nRow 6: r6c5=4, r6c8=3, r6c9=8\nRow 7: r7c1=9, r7c3=5, r7c7=3, r7c8=1\nRow 8: r8c2=1, r8c4=4, r8c8=7\nRow 9: r9c7=8"
+  },
+  {
+    "index": 18,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": "..4.3...69..2...3..5....4......5.........6..77..9...1..2.8....1.17.9..8.8.....3..",
+    "solution": "274538196981264735653719428142357869539186247768942513426873951317495682895621374",
+    "rating": 19,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c3=4, r1c5=3, r1c9=6\nRow 2: r2c1=9, r2c4=2, r2c8=3\nRow 3: r3c2=5, r3c7=4\nRow 4: r4c5=5\nRow 5: r5c6=6, r5c9=7\nRow 6: r6c1=7, r6c4=9, r6c7=1\nRow 7: r7c2=2, r7c4=8, r7c9=1\nRow 8: r8c2=1, r8c3=7, r8c5=9, r8c8=8\nRow 9: r9c1=8, r9c7=3"
+  },
+  {
+    "index": 18,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": "..4.3...69..2...3..5....4......5.........6..77..9...1..2.8....1.17.9..8.8.....3..",
+    "solution": "274538196981264735653719428142357869539186247768942513426873951317495682895621374",
+    "rating": 19,
+    "nl_description": "Here are the given numbers in the Sudoku puzzle:\n\n**Givens by row:**\nRow 1: r1c3=4, r1c5=3, r1c9=6\nRow 2: r2c1=9, r2c4=2, r2c8=3\nRow 3: r3c2=5, r3c7=4\nRow 4: r4c5=5\nRow 5: r5c6=6, r5c9=7\nRow 6: r6c1=7, r6c4=9, r6c8=1\nRow 7: r7c2=2, r7c4=8, r7c9=1\nRow 8: r8c2=1, r8c3=7, r8c5=9, r8c8=8\nRow 9: r9c1=8, r9c7=3"
+  },
+  {
+    "index": 18,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": "..4.3...69..2...3..5....4......5.........6..77..9...1..2.8....1.17.9..8.8.....3..",
+    "solution": "274538196981264735653719428142357869539186247768942513426873951317495682895621374",
+    "rating": 19,
+    "nl_description": "The following are the given clues for this Sudoku puzzle:\n\nGivens by row:\nRow 1: r1c3=4, r1c5=3, r1c9=6\nRow 2: r2c1=9, r2c4=2, r2c8=3\nRow 3: r3c2=5, r3c7=4\nRow 4: r4c5=5\nRow 5: r5c6=6, r5c9=7\nRow 6: r6c1=7, r6c4=9, r6c8=1\nRow 7: r7c2=2, r7c4=8, r7c9=1\nRow 8: r8c2=1, r8c3=7, r8c5=9, r8c8=8\nRow 9: r9c1=8, r9c7=3"
+  },
+  {
+    "index": 19,
+    "model": "qwen/qwen3-next-80b-a3b-instruct",
+    "puzzle": ".81...9.57.5......29.1..7..1.972.5.887....12.........9..........2.34.8......8.25.",
+    "solution": "381472965745698312296153784169724538874539126532861479958217643627345891413986257",
+    "rating": 18,
+    "nl_description": "This Sudoku puzzle contains pre-filled clues in specific cells.\n\nGivens by row:\nRow 1: r1c2=8, r1c3=1, r1c7=9, r1c9=5\nRow 2: r2c1=7, r2c3=5\nRow 3: r3c1=2, r3c2=9, r3c4=1, r3c7=7\nRow 4: r4c1=1, r4c3=9, r4c4=7, r4c5=2, r4c7=5, r4c9=8\nRow 5: r5c1=8, r5c2=7, r5c7=1, r5c8=2\nRow 6: r6c9=9\nRow 7: \nRow 8: r8c2=2, r8c4=3, r8c5=4, r8c7=8\nRow 9: r9c5=8, r9c7=2, r9c8=5"
+  },
+  {
+    "index": 19,
+    "model": "mistralai/mistral-large-3-675b-instruct-2512",
+    "puzzle": ".81...9.57.5......29.1..7..1.972.5.887....12.........9..........2.34.8......8.25.",
+    "solution": "381472965745698312296153784169724538874539126532861479958217643627345891413986257",
+    "rating": 18,
+    "nl_description": "Here are the given numbers in the puzzle.\n\nGivens by row:\nRow 1: r1c2=8, r1c3=1, r1c7=9, r1c9=5\nRow 2: r2c1=7, r2c3=5, r2c4=9\nRow 3: r3c1=2, r3c2=9, r3c4=1, r3c7=7\nRow 4: r4c1=1, r4c3=9, r4c4=7, r4c5=2, r4c7=5, r4c9=8\nRow 5: r5c1=8, r5c2=7, r5c7=1, r5c8=2\nRow 6: r6c9=9\nRow 7: r7c2=2, r7c4=3, r7c5=4, r7c7=8\nRow 8: r8c3=3, r8c5=8, r8c7=2, r8c8=5\nRow 9: r9c6=8, r9c8=2"
+  },
+  {
+    "index": 19,
+    "model": "qwen/qwen3-coder-480b-a35b-instruct",
+    "puzzle": ".81...9.57.5......29.1..7..1.972.5.887....12.........9..........2.34.8......8.25.",
+    "solution": "381472965745698312296153784169724538874539126532861479958217643627345891413986257",
+    "rating": 18,
+    "nl_description": "The following are the given clues for this Sudoku puzzle.\n\nGivens by row:\nRow 1: r1c2=8, r1c3=1, r1c7=9, r1c9=5\nRow 2: r2c1=7, r2c3=5\nRow 3: r3c1=2, r3c2=9, r3c4=1, r3c7=7\nRow 4: r4c1=1, r4c3=9, r4c4=7, r4c5=2, r4c7=5, r4c9=8\nRow 5: r5c1=8, r5c2=7, r5c7=1, r5c8=2\nRow 6: r6c9=9\nRow 8: r8c2=2, r8c4=3, r8c5=4, r8c7=8\nRow 9: r9c5=8, r9c7=2, r9c8=5"
+  }
+]

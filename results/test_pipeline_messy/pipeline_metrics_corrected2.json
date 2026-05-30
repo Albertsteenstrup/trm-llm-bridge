@@ -1,0 +1,20 @@
+{
+  "stage": "finalize",
+  "bridge_output_json": "results/test_pipeline_finetuned/bridge_predictions_corrected2.json",
+  "trm_predictions_json": "results/test_pipeline_finetuned/trm_predictions_on_bridge_corrected2.json",
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.925,
+    "cell_accuracy": 0.9978271604938267,
+    "given_accuracy": 0.9965979427608253,
+    "empty_accuracy": 0.9984015771568747,
+    "format_valid_rate": 1.0
+  },
+  "trm_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.786,
+    "cell_accuracy": 0.9209506172839503,
+    "format_valid_rate": 1.0,
+    "consistent_with_bridge_givens_rate": 0.959
+  }
+}

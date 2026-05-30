@@ -1,0 +1,20 @@
+{
+  "stage": "finalize",
+  "bridge_output_json": "results/test_pipeline_qformer_diverse/messy/bridge_predictions_1000_v3.json",
+  "trm_predictions_json": "results/test_pipeline_qformer_diverse/messy/trm_predictions_on_bridge_1000_v3.json",
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.0,
+    "cell_accuracy": 0.7475432098765418,
+    "given_accuracy": 0.4819061489672941,
+    "empty_accuracy": 0.8680984600768696,
+    "format_valid_rate": 1.0
+  },
+  "trm_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.0,
+    "cell_accuracy": 0.2905555555555562,
+    "format_valid_rate": 1.0,
+    "consistent_with_bridge_givens_rate": 0.016
+  }
+}

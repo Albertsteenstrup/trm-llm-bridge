@@ -1,0 +1,18 @@
+{
+  "stage": "solve",
+  "input_json": "/home/albst/thesis-trm-llm/data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "base_model": "/home/albst/thesis-trm-llm/checkpoints/initial/Qwen3-1.7B",
+  "checkpoint": "/home/albst/thesis-trm-llm/checkpoints/initial/qwen_sudoku_solver_ft/messy10k_retrain/best_model.pt",
+  "predictions_json": "/home/albst/thesis-trm-llm/results/qwen_ft_messy_ood/predictions.json",
+  "solution_metrics": {
+    "loss": 0.17580767980217935,
+    "target_token_accuracy": 0.015829267662018538,
+    "num_examples": 1000,
+    "exact_match": 0.003,
+    "cell_accuracy": 0.47283950617283954,
+    "format_valid_rate": 0.929,
+    "valid_sudoku_rate": 0.005,
+    "consistent_with_gold_givens_rate": 0.136
+  },
+  "baseline_metrics_json": null
+}

@@ -1,0 +1,28 @@
+{
+  "stage": "grid_parse",
+  "input_json": "/home/albst/thesis-trm-llm/data/initial/sudoku_synthetic/rule/test_pipeline/sudoku_nl_messy_test.json",
+  "base_model": "/home/albst/thesis-trm-llm/checkpoints/initial/Qwen3-1.7B",
+  "checkpoint": "/home/albst/thesis-trm-llm/checkpoints/initial/qwen_sudoku_grid_ft/diverse10k/best_model.pt",
+  "target_mode": "grid",
+  "predictions_json": "/home/albst/thesis-trm-llm/results/qwen_sudoku_grid_ft/grid_predictions_corrected2.json",
+  "bridge_output_json": "/home/albst/thesis-trm-llm/results/qwen_grid_ft_pipeline/varied_on_variedplus/bridge_predictions.json",
+  "trm_input_json": "/home/albst/thesis-trm-llm/results/qwen_grid_ft_pipeline/varied_on_variedplus/trm_input.json",
+  "grid_metrics": {
+    "loss": 2.1604195476770403,
+    "target_token_accuracy": 0.002828747710213065,
+    "num_examples": 1000,
+    "exact_match": 0.006,
+    "cell_accuracy": 0.6883456790123377,
+    "given_accuracy": 0.01773939646315605,
+    "empty_accuracy": 0.9918959560250115,
+    "format_valid_rate": 0.043
+  },
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.006,
+    "cell_accuracy": 0.6883456790123377,
+    "given_accuracy": 0.01773939646315605,
+    "empty_accuracy": 0.9918959560250115,
+    "format_valid_rate": 0.043
+  }
+}

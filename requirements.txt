@@ -1,0 +1,24 @@
+# Python dependencies for the TRM-LLM bridge experiments.
+# Exact pinned versions used during the project are recorded in the original
+# per-task virtual environments; the constraints below reflect those used for the
+# bridge training/eval and CLRS study. Install PyTorch separately for your CUDA/CPU
+# build (see scripts/initial/setup_env.sh).
+
+# --- core (frozen LLM front-end + bridge training/eval) ---
+torch                 # install matching your platform (CUDA 12.x recommended)
+transformers>=4.57.0
+accelerate>=1.11.0
+safetensors>=0.6.0
+sentencepiece>=0.2.1
+datasets>=4.3.0
+numpy>=2.1.0
+tqdm
+wandb>=0.22.0
+python-dotenv
+
+# --- LLM baselines / data generation (API clients) ---
+openai
+together
+
+# --- CLRS preliminary study (M-ReNAR specialist + native input tensors) ---
+dm-clrs==2.0.3        # pulls jax; required only for the CLRS study under clrs_native_text/

@@ -1,0 +1,19 @@
+[
+  {
+    "index": 0,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".9.6....3..1.7.9..2....8........5.39.5.4..6..8......45.6.3...5...7..2.......1....",
+    "solution": "794621583681573924235948176472165839359487612816239745168394257947852361523716498",
+    "rating": 17,
+    "nl_description": "notes dump / givens follow\nvariant=columns_flat\nCOLUMN PASS:\ncol9: [r1,c9]=3 / [r4,c9]=9 / [r6,c9]=5\ncol5: Row 9, Col 5: 1 / Row 2, Col 5: 7\nColumn 7: [r2,c7]=9 | [r5,c7]=6\ncol8: cell(r4,c8)=3  cell(r7,c8)=5  cell(r6,c8)=4\nC1 -> cell(r3,c1)=2 ; cell(r6,c1)=8\ncheck later\n\nc6: cell(r3,c6)=8, cell(r8,c6)=2, cell(r4,c6)=5\nColumn 3: r8c3=7 | r2c3=1\nc4: r1c4=6 / r5c4=4 / r7c4=3\ncol2: [r1,c2]=9 | [r5,c2]=5 | [r7,c2]=6\nRANDOM GIVENS:\ncell(r1/c2)=9\nrow6 col1 is 8\ncell(r2/c5)=7\nrow 1 col 4 = 6\nrow 4 col 9 = 9\nRow 6, Col 8: 4\nrow6 col9 is 5\nrow 5, column 7 contains 6\nr4c8 -> 3\nr7c4 -> 3\ncell(r5,c2)=5\nr8c6 -> 2\nrow 8 col 3 = 7 -> confirmed\n\nr7c2=6 -> confirmed\n[r7/c8]:5 ;\nr5c4=4\nrow 4, column 6 contains 5\nneed coffee\n[r2,c3]=1\nrow3 col1 is 2\nr1 c9 has 3\n\ncell(r3/c6)=8\n[r9/c5]:1\nrow 2 col 7 = 9 -> confirmed\n3x3 snapshot:\nBox 7: r7c2=6, r8c3=7\nBox 1: r3c1=2, r1c2=9, r2c3=1\nBox 2: r2c5=7\nBox 3: r1c9=3",
+    "predicted_grid": "",
+    "parse_status": "api_error:AuthenticationError",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "Error code: 401 - {'id': 'oiaPEj4-6z2FuN-9f9c02c78888c8a9', 'error': {'message': 'Invalid API key provided. You can find your API key at https://api.together.ai/settings/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "algorithm": "dfs",
+  "checkpoint_path": "/work/CLRS/renar_runs/dfs_20260525_171817_873524374/checkpoints/mrenar_20260525_171817_900430104",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_dfs_4_best_MLM.pkl",
+  "pi": 0.79015625,
+  "score": 0.79015625
+}

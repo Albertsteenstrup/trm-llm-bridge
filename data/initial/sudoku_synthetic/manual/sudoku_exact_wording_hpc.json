@@ -1,0 +1,9 @@
+[
+  {
+    "index": 0,
+    "puzzle": "6....5.8..83..15....5....6.....2....29.4.7.16....6.....2....8....45..72..5.3....4",
+    "solution": "642935187983671542715284963536129478298457316471863259129746835364598721857312694",
+    "rating": null,
+    "nl_description": "Row 1, column 1, 6. And then in row 1, column 6, there should be a 5. And moving on to column 8, there should be an 8. Then in row 2, column 2, there should be an 8. In row 2, column 3, there should be a 3. In row 2, column 6, there should be a 1. And in row 2, column 7, there should be a 5. In row 3, column 3, there should be a 5. And in row 3, column 8, there should be a 6. In row 4, column 5, there should be a 2. In row 5, column 1, there should be a 2. Then in the same row, column 2, there should be a 9. Same row, column 4, there should be a 4. Same row, column 6, there should be a 7. In the same row, column 8, there should be a 1. Row 5, column 9, there should be a 6. Row 6, column 5, there should be a 6. Row 7, column 2, there should be a 2. Row 7, column 7, there should be an 8. In next row, there should, column 3, there should be a 4. So in same row, column 4, there should be a 5. In row 8... Column 7, there should be a 7. Same row, but column 8, there should be a 2. In row 9, column 2, there should be a 5. Row 9, column 4, there should be a 3, and in row 9, column 9, there should be a 4."
+  }
+]

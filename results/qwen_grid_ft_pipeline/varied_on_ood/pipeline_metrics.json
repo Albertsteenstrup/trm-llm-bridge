@@ -1,0 +1,20 @@
+{
+  "stage": "finalize",
+  "bridge_output_json": "/home/albst/thesis-trm-llm/results/qwen_grid_ft_pipeline/varied_on_ood/bridge_predictions.json",
+  "trm_predictions_json": "/home/albst/thesis-trm-llm/results/qwen_grid_ft_pipeline/varied_on_ood/trm_predictions.json",
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.002,
+    "cell_accuracy": 0.7011234567901158,
+    "given_accuracy": 0.08506923175053611,
+    "empty_accuracy": 0.9803649372595528,
+    "format_valid_rate": 0.139
+  },
+  "trm_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.001,
+    "cell_accuracy": 0.14713580246913607,
+    "format_valid_rate": 1.0,
+    "consistent_with_bridge_givens_rate": 0.877
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "algorithm": "dag_shortest_paths",
+  "checkpoint_path": "/work/CLRS/renar_runs/dag_shortest_paths_20260525_131112_421677755/checkpoints/mrenar_20260525_131112_478884445",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_dag_shortest_paths_4_best_MLM.pkl",
+  "pi": 0.703125,
+  "score": 0.703125
+}

@@ -1,0 +1,64 @@
+{
+  "predictions_json": "results/frontier_sudoku_builder/frontier_predictions_smoke25.json",
+  "baseline_metrics_json": "results/test_pipeline_finetuned/pipeline_metrics_corrected2.json",
+  "baseline_pipeline_metrics": {
+    "stage": "finalize",
+    "bridge_output_json": "results/test_pipeline_finetuned/bridge_predictions_corrected2.json",
+    "trm_predictions_json": "results/test_pipeline_finetuned/trm_predictions_on_bridge_corrected2.json",
+    "bridge_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.925,
+      "cell_accuracy": 0.9978271604938267,
+      "given_accuracy": 0.9965979427608253,
+      "empty_accuracy": 0.9984015771568747,
+      "format_valid_rate": 1.0
+    },
+    "trm_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.786,
+      "cell_accuracy": 0.9209506172839503,
+      "format_valid_rate": 1.0,
+      "consistent_with_bridge_givens_rate": 0.959
+    }
+  },
+  "models": {
+    "deepseek-ai/deepseek-v3.2": {
+      "num_examples": 25,
+      "api_error_count": 15,
+      "parse_failure_count": 1,
+      "solution_metrics": {
+        "num_examples": 25,
+        "structure_valid_rate": 0.36,
+        "strict_json_rate": 0.36,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.07209876543209877,
+        "format_valid_rate": 0.36,
+        "valid_sudoku_rate": 0.0,
+        "consistent_with_gold_givens_rate": 0.0
+      },
+      "comparison_to_pipeline": {
+        "solution_exact_match_delta_vs_trm": -0.786,
+        "solution_cell_accuracy_delta_vs_trm": -0.8488518518518515
+      }
+    },
+    "minimaxai/minimax-m2.7": {
+      "num_examples": 25,
+      "api_error_count": 0,
+      "parse_failure_count": 0,
+      "solution_metrics": {
+        "num_examples": 25,
+        "structure_valid_rate": 1.0,
+        "strict_json_rate": 0.0,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.11209876543209879,
+        "format_valid_rate": 1.0,
+        "valid_sudoku_rate": 0.0,
+        "consistent_with_gold_givens_rate": 0.0
+      },
+      "comparison_to_pipeline": {
+        "solution_exact_match_delta_vs_trm": -0.786,
+        "solution_cell_accuracy_delta_vs_trm": -0.8088518518518515
+      }
+    }
+  }
+}

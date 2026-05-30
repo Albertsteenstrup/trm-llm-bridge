@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+
+# Environments
+.venv/
+.venv-*/
+env/
+
+# Experiment noise
+wandb/
+logs/
+
+# Large base weights expected at this path but not redistributed here
+checkpoints/initial/Qwen3-1.7B/
+checkpoints/initial/qwen_sudoku_solver_ft/
+
+# LaTeX build artifacts (main.pdf and main.bbl are committed intentionally)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz

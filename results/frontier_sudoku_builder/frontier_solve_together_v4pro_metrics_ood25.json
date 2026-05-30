@@ -1,0 +1,56 @@
+{
+  "input_json": "data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "task": "solve",
+  "baseline_metrics_json": "results/test_pipeline_finetuned/pipeline_metrics_corrected2.json",
+  "baseline_pipeline_metrics": {
+    "stage": "finalize",
+    "bridge_output_json": "results/test_pipeline_finetuned/bridge_predictions_corrected2.json",
+    "trm_predictions_json": "results/test_pipeline_finetuned/trm_predictions_on_bridge_corrected2.json",
+    "bridge_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.044,
+      "cell_accuracy": 0.9690617283950511,
+      "given_accuracy": 0.9634085354382278,
+      "empty_accuracy": 0.9717630944605319,
+      "format_valid_rate": 1.0
+    },
+    "trm_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.096,
+      "cell_accuracy": 0.6363950617283952,
+      "format_valid_rate": 1.0,
+      "consistent_with_bridge_givens_rate": 0.268
+    }
+  },
+  "predictions_json": "results/frontier_sudoku_builder/frontier_solve_together_v4pro_ood25.json",
+  "max_tokens": 1024,
+  "allow_digit_fallback": false,
+  "extra_body_by_model": {
+    "deepseek-ai/DeepSeek-V4-Pro": {
+      "reasoning": {
+        "enabled": false
+      }
+    }
+  },
+  "models": {
+    "deepseek-ai/DeepSeek-V4-Pro": {
+      "num_examples": 25,
+      "api_error_count": 0,
+      "parse_failure_count": 0,
+      "solution_metrics": {
+        "num_examples": 25,
+        "structure_valid_rate": 1.0,
+        "strict_json_rate": 0.96,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.2518518518518518,
+        "format_valid_rate": 1.0,
+        "valid_sudoku_rate": 0.04,
+        "consistent_with_gold_givens_rate": 0.0
+      },
+      "comparison_to_pipeline": {
+        "solution_exact_match_delta_vs_trm": -0.096,
+        "solution_cell_accuracy_delta_vs_trm": -0.3845432098765434
+      }
+    }
+  }
+}

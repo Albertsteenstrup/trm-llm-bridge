@@ -1,0 +1,49 @@
+{
+  "input_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/data/initial/sudoku_synthetic/rule/test_pipeline/sudoku_nl_messy_test.json",
+  "baseline_metrics_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/results/test_pipeline_finetuned/pipeline_metrics_corrected2.json",
+  "baseline_pipeline_metrics": {
+    "stage": "finalize",
+    "bridge_output_json": "results/test_pipeline_finetuned/bridge_predictions_corrected2.json",
+    "trm_predictions_json": "results/test_pipeline_finetuned/trm_predictions_on_bridge_corrected2.json",
+    "bridge_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.925,
+      "cell_accuracy": 0.9978271604938267,
+      "given_accuracy": 0.9965979427608253,
+      "empty_accuracy": 0.9984015771568747,
+      "format_valid_rate": 1.0
+    },
+    "trm_metrics": {
+      "num_examples": 1000,
+      "exact_match": 0.786,
+      "cell_accuracy": 0.9209506172839503,
+      "format_valid_rate": 1.0,
+      "consistent_with_bridge_givens_rate": 0.959
+    }
+  },
+  "predictions_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/results/openai_sudoku_code_interpreter/openai_predictions_messy_smoke25.json",
+  "container_mode": "shared",
+  "shared_container_id": "cntr_69e00c0aa5c88193814f652dfb9f352c0d5661c64779f2da",
+  "models": {
+    "gpt-5.4": {
+      "num_examples": 100,
+      "api_error_count": 0,
+      "parse_failure_count": 0,
+      "solution_metrics": {
+        "num_examples": 100,
+        "tool_used_rate": 1.0,
+        "structure_valid_rate": 1.0,
+        "strict_json_rate": 1.0,
+        "exact_match": 0.99,
+        "cell_accuracy": 0.9948148148148148,
+        "format_valid_rate": 1.0,
+        "valid_sudoku_rate": 1.0,
+        "consistent_with_gold_givens_rate": 0.99
+      },
+      "comparison_to_pipeline": {
+        "solution_exact_match_delta_vs_trm": 0.20399999999999996,
+        "solution_cell_accuracy_delta_vs_trm": 0.07386419753086448
+      }
+    }
+  }
+}

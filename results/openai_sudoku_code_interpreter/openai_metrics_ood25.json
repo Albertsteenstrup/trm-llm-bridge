@@ -1,0 +1,26 @@
+{
+  "input_json": "data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "baseline_metrics_json": null,
+  "baseline_pipeline_metrics": null,
+  "predictions_json": "results/openai_sudoku_code_interpreter/openai_predictions_ood25.json",
+  "container_mode": "shared",
+  "shared_container_id": "cntr_69f0f50454e8819891422abcf82e69df07c4e8268a0a1a9c",
+  "models": {
+    "gpt-5.4": {
+      "num_examples": 25,
+      "api_error_count": 0,
+      "parse_failure_count": 0,
+      "solution_metrics": {
+        "num_examples": 25,
+        "tool_used_rate": 1.0,
+        "structure_valid_rate": 1.0,
+        "strict_json_rate": 1.0,
+        "exact_match": 1.0,
+        "cell_accuracy": 1.0,
+        "format_valid_rate": 1.0,
+        "valid_sudoku_rate": 1.0,
+        "consistent_with_gold_givens_rate": 1.0
+      }
+    }
+  }
+}

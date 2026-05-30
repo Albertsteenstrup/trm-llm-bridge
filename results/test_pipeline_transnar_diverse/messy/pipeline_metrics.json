@@ -1,0 +1,20 @@
+{
+  "stage": "finalize",
+  "bridge_output_json": "/home/albst/thesis-trm-llm/results/test_pipeline_transnar_diverse/messy/bridge_predictions.json",
+  "trm_predictions_json": "/home/albst/thesis-trm-llm/results/test_pipeline_transnar_diverse/messy/trm_predictions.json",
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.002,
+    "cell_accuracy": 0.7797654320987653,
+    "given_accuracy": 0.5046202682776535,
+    "empty_accuracy": 0.9046521936659209,
+    "format_valid_rate": 1.0
+  },
+  "trm_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.005,
+    "cell_accuracy": 0.31808641975308644,
+    "format_valid_rate": 1.0,
+    "consistent_with_bridge_givens_rate": 0.077
+  }
+}

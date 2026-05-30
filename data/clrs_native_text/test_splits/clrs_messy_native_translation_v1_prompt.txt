@@ -1,0 +1,54 @@
+You are translating a messy operations note into a CLRS native input JSON object.
+
+Task context:
+- This is NOT a Sudoku problem.
+- This is a CLRS insertion_sort native-input handoff.
+- The downstream specialist expects the native CLRS input only, not prose and not the sorted answer.
+- Use zero-based node ids 0 through 63.
+- The position feature is regular: pos[i] = i / 64, rounded exactly as shown in the expected CLRS data style.
+- The key feature is a scalar float per node. Preserve all three-decimal values exactly.
+
+Messy note from the data-prep log:
+"sorting-order sample, len sixty-four. Algorithm is insertion_sort. I copied the key vector in chunks while debugging a bridge adapter; ignore the warm-up arithmetic and the old sorted-list scratchpad. The node order below is the real native order."
+
+Warm-up / distractors to ignore:
+- 17 + 28 = 45.
+- The word bridge reversed is egdirb.
+- Scratch sorted-value preview: 0.001, 0.024, 0.053, ... this is NOT the native key order.
+- Do not output CLRS-Text. Do not output the model answer/pred permutation.
+
+Key chunks, with original zero-based node ids:
+A / first row-ish chunk, nodes 00-07:
+00:0.076, 01:0.779, 02:0.438, 03:0.723, 04:0.977, 05:0.538, 06:0.501, 07:0.072
+
+B / next eight, nodes 08-15:
+08:0.268, 09:0.499, 10:0.679, 11:0.803, 12:0.380, 13:0.065, 14:0.288, 15:0.909
+
+C / nodes 16-23. The note says "after 16 comes 17, 18, ..."; keep this order:
+16:0.213, 17:0.452, 18:0.931, 19:0.024, 20:0.600, 21:0.950, 22:0.230, 23:0.548
+
+D / nodes 24-31:
+24:0.909, 25:0.133, 26:0.523, 27:0.750, 28:0.669, 29:0.467, 30:0.204, 31:0.490
+
+E / nodes 32-39:
+32:0.372, 33:0.477, 34:0.365, 35:0.837, 36:0.768, 37:0.313, 38:0.572, 39:0.276
+
+F / nodes 40-47:
+40:0.452, 41:0.352, 42:0.657, 43:0.370, 44:0.459, 45:0.719, 46:0.412, 47:0.906
+
+G / nodes 48-55:
+48:0.180, 49:0.741, 50:0.422, 51:0.426, 52:0.634, 53:0.522, 54:0.414, 55:0.001
+Correction from the log: node 55 is exactly 0.001. If any draft says 0.010, ignore the draft.
+
+H / final chunk, nodes 56-63:
+56:0.092, 57:0.709, 58:0.524, 59:0.696, 60:0.955, 61:0.682, 62:0.053, 63:0.308
+
+Return exactly one JSON object and nothing else. It must have this schema:
+{
+  "algorithm": "insertion_sort",
+  "requested_length": 64,
+  "inputs": [
+    {"name": "pos", "location": "node", "type": "scalar", "shape": [64], "data": [64 numbers]},
+    {"name": "key", "location": "node", "type": "scalar", "shape": [64], "data": [64 numbers]}
+  ]
+}

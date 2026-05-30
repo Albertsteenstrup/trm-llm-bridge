@@ -1,0 +1,4 @@
+- data/sudoku_grid/sudoku_raw_1000.json used to train TRM
+- data/sudoku_grid/sudoku_raw_test_n1000_seed42_round1.json used to train scripts/initial/translators/train_bridge.sbatch 1K 500 EPOCHS
+- data/sudoku_grid/sudoku_raw_test_n10000_seed42_round1.json used to train scripts/initial/translators/train_bridge.sbatch 10K H100
+- data/sudoku_grid/sudoku_raw_1000_v3.json used to test pipeline

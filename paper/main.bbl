@@ -1,0 +1,351 @@
+\begin{thebibliography}{42}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{LFM()}]{LFM25350MNoSize}
+
+\newblock \href {https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind}
+  {{LFM2}.5-{350M}: {No} {Size} {Left} {Behind} {\textbar} {Liquid} {AI}}.
+
+\bibitem[{Sap(2024)}]{SapientincSudokuextremeDatasets}
+ 2024.
+\newblock \href {https://huggingface.co/datasets/sapientinc/sudoku-extreme}
+  {sapientinc/sudoku-extreme}.
+
+\bibitem[{Qwe(2025)}]{QwenQwen317BHugging2025}
+ 2025.
+\newblock \href {https://huggingface.co/Qwen/Qwen3-1.7B} {Qwen/{Qwen3}-1.{7B}}.
+
+\bibitem[{Goo(2026)}]{GoogledeepmindSimply2026}
+ 2026.
+\newblock \href {https://github.com/google-deepmind/simply}
+  {google-deepmind/simply}.
+
+\bibitem[{Hug(2026)}]{HuggingfaceMlintern2026}
+ 2026.
+\newblock \href {https://github.com/huggingface/ml-intern}
+  {huggingface/ml-intern}.
+
+\bibitem[{Liq(2026)}]{LiquidAILFM25350MHugging2026}
+ 2026.
+\newblock \href {https://huggingface.co/LiquidAI/LFM2.5-350M}
+  {{LiquidAI}/{LFM2}.5-{350M}}.
+
+\bibitem[{Andrej(2026)}]{andrejKarpathyAutoresearch2026}
+Andrej. 2026.
+\newblock \href {https://github.com/karpathy/autoresearch}
+  {karpathy/autoresearch}.
+
+\bibitem[{Banerjee et~al.(2024)Banerjee, Agarwal, and
+  Singh}]{banerjeeVulnerabilityLanguageModel2024}
+Sourav Banerjee, Ayushi Agarwal, and Eishkaran Singh. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2412.03597} {The
+  {Vulnerability} of {Language} {Model} {Benchmarks}: {Do} {They} {Accurately}
+  {Reflect} {True} {LLM} {Performance}?}
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2412.03597 [cs].
+
+\bibitem[{Bounsi et~al.(2024)Bounsi, Ibarz, Dudzik, Hamrick, Markeeva,
+  Vitvitskyi, Pascanu, and Veličković}]{bounsiTransformersMeetNeural2024}
+Wilfried Bounsi, Borja Ibarz, Andrew Dudzik, Jessica~B. Hamrick, Larisa
+  Markeeva, Alex Vitvitskyi, Razvan Pascanu, and Petar Veličković. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2406.09308} {Transformers meet
+  {Neural} {Algorithmic} {Reasoners}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2406.09308 [cs].
+
+\bibitem[{Chollet et~al.(2026)Chollet, Knoop, Kamradt, Landers, and
+  Pinkard}]{cholletARCAGI2NewChallenge2026}
+Francois Chollet, Mike Knoop, Gregory Kamradt, Bryan Landers, and Henry
+  Pinkard. 2026.
+\newblock \href {https://doi.org/10.48550/arXiv.2505.11831} {{ARC}-{AGI}-2: {A}
+  {New} {Challenge} for {Frontier} {AI} {Reasoning} {Systems}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2505.11831 [cs.AI].
+
+\bibitem[{Dai et~al.(2024)Dai, Deng, Zhao, Xu, Gao, Chen, Li, Zeng, Yu, Wu,
+  Xie, Li, Huang, Luo, Ruan, Sui, and Liang}]{daiDeepSeekMoEUltimateExpert2024}
+Damai Dai, Chengqi Deng, Chenggang Zhao, R.~X. Xu, Huazuo Gao, Deli Chen,
+  Jiashi Li, Wangding Zeng, Xingkai Yu, Y.~Wu, Zhenda Xie, Y.~K. Li, Panpan
+  Huang, Fuli Luo, Chong Ruan, Zhifang Sui, and Wenfeng Liang. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2401.06066} {{DeepSeekMoE}:
+  {Towards} {Ultimate} {Expert} {Specialization} in {Mixture}-of-{Experts}
+  {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2401.06066 [cs].
+
+\bibitem[{Dehghani et~al.(2019)Dehghani, Gouws, Vinyals, Uszkoreit, and
+  Kaiser}]{dehghaniUniversalTransformers2019}
+Mostafa Dehghani, Stephan Gouws, Oriol Vinyals, Jakob Uszkoreit, and Łukasz
+  Kaiser. 2019.
+\newblock \href {https://doi.org/10.48550/arXiv.1807.03819} {Universal
+  {Transformers}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:1807.03819 [cs.CL].
+
+\bibitem[{Gao et~al.(2023)Gao, Madaan, Zhou, Alon, Liu, Yang, Callan, and
+  Neubig}]{gaoPALProgramaidedLanguage2023}
+Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie
+  Callan, and Graham Neubig. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2211.10435} {{PAL}:
+  {Program}-aided {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2211.10435 [cs].
+
+\bibitem[{Ghosh et~al.(2024)Ghosh, Evuru, Kumar, S, Aneja, Jin, Duraiswami, and
+  Manocha}]{ghoshCloserLookLimitations2024}
+Sreyan Ghosh, Chandra Kiran~Reddy Evuru, Sonal Kumar, Ramaneswaran S, Deepali
+  Aneja, Zeyu Jin, Ramani Duraiswami, and Dinesh Manocha. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2402.05119} {A {Closer} {Look}
+  at the {Limitations} of {Instruction} {Tuning}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2402.05119 [cs].
+
+\bibitem[{Haimes et~al.(2024)Haimes, Wenner, Thaman, Tashev, Neo, Kran, and
+  Schreiber}]{haimesBenchmarkInflationRevealing2024}
+Jacob Haimes, Cenny Wenner, Kunvar Thaman, Vassil Tashev, Clement Neo, Esben
+  Kran, and Jason Schreiber. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2410.09247} {Benchmark
+  {Inflation}: {Revealing} {LLM} {Performance} {Gaps} {Using}
+  {Retro}-{Holdouts}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2410.09247 [cs].
+
+\bibitem[{Henderson et~al.(2020)Henderson, Hu, Romoff, Brunskill, Jurafsky, and
+  Pineau}]{JMLR:v21:20-312}
+Peter Henderson, Jieru Hu, Joshua Romoff, Emma Brunskill, Dan Jurafsky, and
+  Joelle Pineau. 2020.
+\newblock \href {http://jmlr.org/papers/v21/20-312.html} {Towards the
+  systematic reporting of the energy and carbon footprints of machine
+  learning}.
+\newblock \emph{Journal of Machine Learning Research}, 21(248):1--43.
+
+\bibitem[{Hendrycks et~al.(2021)Hendrycks, Burns, Basart, Zou, Mazeika, Song,
+  and Steinhardt}]{hendrycksMeasuringMassiveMultitask2021}
+Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn
+  Song, and Jacob Steinhardt. 2021.
+\newblock \href {https://doi.org/10.48550/arXiv.2009.03300} {Measuring
+  {Massive} {Multitask} {Language} {Understanding}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2009.03300 [cs].
+
+\bibitem[{Jain and Linares(2025)}]{jainTinyRecursiveControl2025}
+Amit Jain and Richard Linares. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2512.16824} {Tiny {Recursive}
+  {Control}: {Iterative} {Reasoning} for {Efficient} {Optimal} {Control}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2512.16824 [cs].
+
+\bibitem[{Jolicoeur-Martineau(2025)}]{jolicoeur-martineauLessMoreRecursive2025}
+Alexia Jolicoeur-Martineau. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2510.04871} {Less is {More}:
+  {Recursive} {Reasoning} with {Tiny} {Networks}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2510.04871 [cs].
+
+\bibitem[{Kalajdzievski(2024)}]{kalajdzievskiScalingLawsForgetting2024}
+Damjan Kalajdzievski. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2401.05605} {Scaling {Laws} for
+  {Forgetting} {When} {Fine}-{Tuning} {Large} {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2401.05605 [cs].
+
+\bibitem[{Kambhampati et~al.(2024)Kambhampati, Valmeekam, Guan, Verma, Stechly,
+  Bhambri, Saldyt, and Murthy}]{kambhampatiLLMsCantPlan2024}
+Subbarao Kambhampati, Karthik Valmeekam, Lin Guan, Mudit Verma, Kaya Stechly,
+  Siddhant Bhambri, Lucas Saldyt, and Anil Murthy. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2402.01817} {{LLMs} {Can}'t
+  {Plan}, {But} {Can} {Help} {Planning} in {LLM}-{Modulo} {Frameworks}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2402.01817 [cs].
+
+\bibitem[{Kaplan et~al.(2020)Kaplan, McCandlish, Henighan, Brown, Chess, Child,
+  Gray, Radford, Wu, and Amodei}]{kaplanScalingLawsNeural2020}
+Jared Kaplan, Sam McCandlish, Tom Henighan, Tom~B. Brown, Benjamin Chess, Rewon
+  Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei. 2020.
+\newblock \href {https://arxiv.org/abs/2001.08361v1} {Scaling {Laws} for
+  {Neural} {Language} {Models}}.
+
+\bibitem[{Karpas et~al.(2022)Karpas, Abend, Belinkov, Lenz, Lieber, Ratner,
+  Shoham, Bata, Levine, Leyton-Brown, Muhlgay, Rozen, Schwartz, Shachaf,
+  Shalev-Shwartz, Shashua, and Tenenholtz}]{karpasMRKLSystemsModular2022}
+Ehud Karpas, Omri Abend, Yonatan Belinkov, Barak Lenz, Opher Lieber, Nir
+  Ratner, Yoav Shoham, Hofit Bata, Yoav Levine, Kevin Leyton-Brown, Dor
+  Muhlgay, Noam Rozen, Erez Schwartz, Gal Shachaf, Shai Shalev-Shwartz, Amnon
+  Shashua, and Moshe Tenenholtz. 2022.
+\newblock \href {https://doi.org/10.48550/arXiv.2205.00445} {{MRKL} {Systems}:
+  {A} modular, neuro-symbolic architecture that combines large language models,
+  external knowledge sources and discrete reasoning}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2205.00445 [cs].
+
+\bibitem[{Knupp et~al.(2026)Knupp, Metzen, Bohn, Groh, and
+  Kersting}]{knuppDepthRecurrentAttentionMixtures2026}
+Jonas Knupp, Jan~Hendrik Metzen, Jeremias Bohn, Georg Groh, and Kristian
+  Kersting. 2026.
+\newblock \href {https://doi.org/10.48550/ARXIV.2601.21582} {Depth-{Recurrent}
+  {Attention} {Mixtures}: {Giving} {Latent} {Reasoning} the {Attention} it
+  {Deserves}}.
+\newblock \emph{arXiv preprint}.
+\newblock Version Number: 1.
+
+\bibitem[{Kohli et~al.(2026)Kohli, Parthasarathy, Sun, and
+  Yao}]{kohliLoopThinkGeneralize2026}
+Harsh Kohli, Srinivasan Parthasarathy, Huan Sun, and Yuekun Yao. 2026.
+\newblock \href {https://doi.org/10.48550/arXiv.2604.07822} {Loop, {Think}, \&
+  {Generalize}: {Implicit} {Reasoning} in {Recurrent}-{Depth} {Transformers}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2604.07822 [cs].
+
+\bibitem[{Li et~al.(2023)Li, Li, Savarese, and
+  Hoi}]{liBLIP2BootstrappingLanguageImage2023}
+Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2301.12597} {{BLIP}-2:
+  {Bootstrapping} {Language}-{Image} {Pre}-training with {Frozen} {Image}
+  {Encoders} and {Large} {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2301.12597 [cs].
+
+\bibitem[{Li et~al.(2022)Li, Gururangan, Dettmers, Lewis, Althoff, Smith, and
+  Zettlemoyer}]{liBranchTrainMergeEmbarrassinglyParallel2022}
+Margaret Li, Suchin Gururangan, Tim Dettmers, Mike Lewis, Tim Althoff, Noah~A.
+  Smith, and Luke Zettlemoyer. 2022.
+\newblock \href {https://doi.org/10.48550/arXiv.2208.03306}
+  {Branch-{Train}-{Merge}: {Embarrassingly} {Parallel} {Training} of {Expert}
+  {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2208.03306 [cs].
+
+\bibitem[{Liu et~al.(2023)Liu, Li, Wu, and
+  Lee}]{liuVisualInstructionTuning2023a}
+Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong~Jae Lee. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2304.08485} {Visual
+  {Instruction} {Tuning}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2304.08485 [cs].
+
+\bibitem[{Luo et~al.(2025)Luo, Yang, Meng, Li, Zhou, and
+  Zhang}]{luoEmpiricalStudyCatastrophic2025}
+Yun Luo, Zhen Yang, Fandong Meng, Yafu Li, Jie Zhou, and Yue Zhang. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2308.08747} {An {Empirical}
+  {Study} of {Catastrophic} {Forgetting} in {Large} {Language} {Models}
+  {During} {Continual} {Fine}-tuning}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2308.08747 [cs].
+
+\bibitem[{{Olivier Lacombe} et~al.(2025){Olivier Lacombe}, {Kathleen Kenealy},
+  {Kat Black}, {Ravin Kumar}, {Francesco Visin}, and {Jiageng
+  Zhang}}]{IntroducingGemma3}
+{Olivier Lacombe}, {Kathleen Kenealy}, {Kat Black}, {Ravin Kumar}, {Francesco
+  Visin}, and {Jiageng Zhang}. 2025.
+\newblock \href
+  {https://developers.googleblog.com/en/introducing-gemma-3-270m/} {Introducing
+  {Gemma} 3 {270M}: {The} compact model for hyper-efficient {AI}}.
+
+\bibitem[{Pan et~al.(2023)Pan, Albalak, Wang, and
+  Wang}]{panLogicLMEmpoweringLarge2023}
+Liangming Pan, Alon Albalak, Xinyi Wang, and William~Yang Wang. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2305.12295} {Logic-{LM}:
+  {Empowering} {Large} {Language} {Models} with {Symbolic} {Solvers} for
+  {Faithful} {Logical} {Reasoning}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2305.12295 [cs].
+
+\bibitem[{Parisi et~al.(2022)Parisi, Zhao, and
+  Fiedel}]{parisiTALMToolAugmented2022}
+Aaron Parisi, Yao Zhao, and Noah Fiedel. 2022.
+\newblock \href {https://doi.org/10.48550/arXiv.2205.12255} {{TALM}: {Tool}
+  {Augmented} {Language} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2205.12255 [cs].
+
+\bibitem[{Rauba et~al.(2026)Rauba, Fanconi, and van~der
+  Schaar}]{raubaTinyAutoregressiveRecursive2026}
+Paulius Rauba, Claudio Fanconi, and Mihaela van~der Schaar. 2026.
+\newblock \href {https://doi.org/10.48550/ARXIV.2603.08082} {Tiny
+  {Autoregressive} {Recursive} {Models}}.
+\newblock \emph{arXiv preprint}.
+\newblock Version Number: 1.
+
+\bibitem[{Saunshi et~al.(2025)Saunshi, Dikkala, Li, Kumar, and
+  Reddi}]{saunshiReasoningLatentThoughts2025}
+Nikunj Saunshi, Nishanth Dikkala, Zhiyuan Li, Sanjiv Kumar, and Sashank~J.
+  Reddi. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2502.17416} {Reasoning with
+  {Latent} {Thoughts}: {On} the {Power} of {Looped} {Transformers}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2502.17416 [cs.CL].
+
+\bibitem[{Schick et~al.(2023)Schick, Dwivedi-Yu, Dessì, Raileanu, Lomeli,
+  Zettlemoyer, Cancedda, and Scialom}]{schickToolformerLanguageModels2023}
+Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli,
+  Luke Zettlemoyer, Nicola Cancedda, and Thomas Scialom. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2302.04761} {Toolformer:
+  {Language} {Models} {Can} {Teach} {Themselves} to {Use} {Tools}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2302.04761 [cs].
+
+\bibitem[{Schwartz et~al.(2020)Schwartz, Dodge, Smith, and
+  Etzioni}]{schwartzGreenAI2020}
+Roy Schwartz, Jesse Dodge, Noah~A. Smith, and Oren Etzioni. 2020.
+\newblock \href {https://doi.org/10.1145/3381831} {Green {AI}}.
+\newblock \emph{Commun. ACM}, 63(12):54--63.
+
+\bibitem[{Seely et~al.(2025)Seely, Imajuku, Zhao, Cetin, and
+  Jones}]{seelySudokuBenchEvaluatingCreative2025}
+Jeffrey Seely, Yuki Imajuku, Tianyu Zhao, Edoardo Cetin, and Llion Jones. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2505.16135} {Sudoku-{Bench}:
+  {Evaluating} creative reasoning with {Sudoku} variants}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2505.16135 [cs].
+
+\bibitem[{Sukhbaatar et~al.(2024)Sukhbaatar, Golovneva, Sharma, Xu, Lin,
+  Rozière, Kahn, Li, Yih, Weston, and
+  Li}]{sukhbaatarBranchTrainMiXMixingExpert2024}
+Sainbayar Sukhbaatar, Olga Golovneva, Vasu Sharma, Hu~Xu, Xi~Victoria Lin,
+  Baptiste Rozière, Jacob Kahn, Daniel Li, Wen-tau Yih, Jason Weston, and Xian
+  Li. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2403.07816}
+  {Branch-{Train}-{MiX}: {Mixing} {Expert} {LLMs} into a {Mixture}-of-{Experts}
+  {LLM}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2403.07816 [cs].
+
+\bibitem[{Trinh et~al.(2024)Trinh, Wu, Le, He, and
+  Luong}]{trinhSolvingOlympiadGeometry2024}
+Trieu~H. Trinh, Yuhuai Wu, Quoc~V. Le, He~He, and Thang Luong. 2024.
+\newblock \href {https://doi.org/10.1038/s41586-023-06747-5} {Solving olympiad
+  geometry without human demonstrations}.
+\newblock \emph{Nature}, 625(7995):476--482.
+
+\bibitem[{Wang et~al.(2025)Wang, Li, Sun, Chen, Liu, Wu, Lu, Song, and
+  Yadkori}]{wangHierarchicalReasoningModel2025}
+Guan Wang, Jin Li, Yuhao Sun, Xing Chen, Changling Liu, Yue Wu, Meng Lu, Sen
+  Song, and Yasin~Abbasi Yadkori. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2506.21734} {Hierarchical
+  {Reasoning} {Model}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2506.21734 [cs].
+
+\bibitem[{Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang,
+  Lv, Zheng, Liu, Zhou, Huang, Hu, Ge, Wei, Lin, Tang, Yang, Tu, Zhang, Yang,
+  Yang, Zhou, Zhou, Lin, Dang, Bao, Yang, Yu, Deng, Li, Xue, Li, Zhang, Wang,
+  Zhu, Men, Gao, Liu, Luo, Li, Tang, Yin, Ren, Wang, Zhang, Ren, Fan, Su,
+  Zhang, Zhang, Wan, Liu, Wang, Cui, Zhang, Zhou, and
+  Qiu}]{yangQwen3TechnicalReport2025}
+An~Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen
+  Yu, Chang Gao, Chengen Huang, Chenxu Lv, Chujie Zheng, Dayiheng Liu, Fan
+  Zhou, Fei Huang, Feng Hu, Hao Ge, Haoran Wei, Huan Lin, Jialong Tang, and 41
+  others. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2505.09388} {Qwen3 {Technical}
+  {Report}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2505.09388 [cs].
+
+\bibitem[{Yang et~al.(2026)Yang, Li, and Li}]{yangARISAutonomousResearch2026}
+Ruofeng Yang, Yongcan Li, and Shuai Li. 2026.
+\newblock \href {https://doi.org/10.48550/arXiv.2605.03042} {{ARIS}:
+  {Autonomous} {Research} via {Adversarial} {Multi}-{Agent} {Collaboration}}.
+\newblock \emph{arXiv preprint}.
+\newblock ArXiv:2605.03042 [cs].
+
+\end{thebibliography}

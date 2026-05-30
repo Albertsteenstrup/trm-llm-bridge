@@ -1,0 +1,9 @@
+{
+  "algorithm": "binary_search",
+  "checkpoint_path": "/work/CLRS/renar_runs/binary_search_20260525_173231_547002747/checkpoints/mrenar_20260525_173231_592822233",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_binary_search_4_best_MLM.pkl",
+  "return": 0.225,
+  "score": 0.225
+}

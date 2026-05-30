@@ -1,0 +1,9 @@
+{
+  "algorithm": "dijkstra",
+  "checkpoint_path": "/work/CLRS/renar_runs/dijkstra_20260525_135435_150209476/checkpoints/mrenar_20260525_135435_182005196",
+  "matched": 200,
+  "missing": 0,
+  "model_file": "single_dijkstra_4_best_MLM.pkl",
+  "pi": 0.6646875,
+  "score": 0.6646875
+}

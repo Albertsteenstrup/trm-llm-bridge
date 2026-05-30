@@ -1,0 +1,20 @@
+{
+  "stage": "finalize",
+  "bridge_output_json": "/home/albst/thesis-trm-llm/results/test_pipeline_linear_messy/ood_llm/bridge_predictions.json",
+  "trm_predictions_json": "/home/albst/thesis-trm-llm/results/test_pipeline_linear_messy/ood_llm/trm_predictions.json",
+  "bridge_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.0,
+    "cell_accuracy": 0.3548024691358026,
+    "given_accuracy": 0.07613910661629031,
+    "empty_accuracy": 0.4795562798595428,
+    "format_valid_rate": 1.0
+  },
+  "trm_metrics": {
+    "num_examples": 1000,
+    "exact_match": 0.0,
+    "cell_accuracy": 0.11396296296296285,
+    "format_valid_rate": 1.0,
+    "consistent_with_bridge_givens_rate": 0.0
+  }
+}

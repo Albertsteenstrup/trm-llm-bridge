@@ -1,0 +1,427 @@
+[
+  {
+    "index": 0,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".9.6....3..1.7.9..2....8........5.39.5.4..6..8......45.6.3...5...7..2.......1....",
+    "solution": "794621583681573924235948176472165839359487612816239745168394257947852361523716498",
+    "rating": 17,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nGiven entries:\nRow 1: c2: 9, c4=6, c9 contains 3\nRow 4: c9=9 \u2022 c6 is 5 \u2022 c8 contains 3\nRow 3: c6=8; c1: 2\nRow 8: c6 is 2; c3 contains 7\nRow 2: c3=1 \u2022 c5 is 7 \u2022 c7 is 9\nRow 5: c2 contains 5 \u2022 c4 has 4 \u2022 c7 is 6.\nRow 9: c5 contains 1\nRow 7: c2=6 \u2022 c4 has 3 \u2022 c8 is 5.\nThe clue list continues below with additional fixed entries from the same starting position.\nRow 6: c1=8, c8 has 4, c9: 5\n\nThis completes the clue inventory for the initial board; all unlisted cells remain empty at the start.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".9..6...3..1.7.9....2...8........5.3.9.4..6..8......45.6.3..5........1.........\"}",
+    "predicted_grid": ".9..6...3..1.7.9....2...8........5.3.9.4..6..8......45.6.3..5........1..........."
+  },
+  {
+    "index": 1,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".3.1..8......6..1.....4..5..73..4....98.....21..9..7......5..2...78..3...1...6.7.",
+    "solution": "236175894954368217781249653673524189498617532125983746369751428547892361812436975",
+    "rating": 20,
+    "nl_description": "Only the following cells are pre-filled. All other positions are intentionally left open for reasoning during solving.\n\nClues by position:\nRow 9: c2 is 1 \u2022 c6: 6 \u2022 c8=7.\nRow 8: c3=7; c7: 3; c4=8\nThe next lines add more givens that belong to the same initial board configuration.\nRow 1: c2 has 3; c4 contains 1; c7 contains 8\nRow 3: c5 contains 4; c8 has 5\nWhat follows is still part of the exact same set of preset clues, simply presented in continuing row blocks.\nRow 2: c5: 6 | c8=1\nRow 7: c5=5 \u2022 c8 is 2\nRow 4: c6 is 4 \u2022 c3=3 \u2022 c2=7\nRow 5: c2: 9 \u2022 c3 is 8 \u2022 c9: 2.\nRow 6: c4 contains 9 | c7 contains 7 | c1 has 1.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".3..1..8........6..1....4...5.73..4........98......21..9..7...5...2..1..6.7..\"}",
+    "predicted_grid": ".3..1..8........6..1....4...5.73..4........98......21..9..7...5...2..1..6.7......"
+  },
+  {
+    "index": 2,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "....945.8..9753.4...4.....38....932..92.....14..2..........871..2......5....1.6..",
+    "solution": "236194578189753246574682193815469327392875461467231859653928714721346985948517632",
+    "rating": 2,
+    "nl_description": "These are the clues already present in the grid. They form the fixed anchors from which the remaining cells must be deduced.\n\nClues by position:\nRow 9: c7 contains 6 \u2022 c5 has 1\nRow 6: c1=4, c4=2\nRow 4: c6 is 9 | c1 has 8 | c8 has 2 | c7: 3\nRow 2: c3 has 9 | c4 has 7 | c5=5 | c6=3 | c8: 4\nThe clue list continues below with additional fixed entries from the same starting position.\nRow 5: c2=9 | c3: 2 | c9 is 1.\nRow 7: c6=8, c7 contains 7, c8: 1\nRow 8: c2=2 \u2022 c9 contains 5\nRow 3: c3 has 4, c9=3\nRow 1: c5 contains 9; c6=4; c7 is 5; c9=8",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".........9..9753.4..4......38..2..1.92.....1..2.....4...8.71..2......5.1..6..8\"}",
+    "predicted_grid": ".........9..9753.4..4......38..2..1.92.....1..2.....4...8.71..2......5.1..6..8..."
+  },
+  {
+    "index": 3,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "2.....98.1......75.85.....1.98.2.5..7....8..2...7..81...16.4.....7....2..5......9",
+    "solution": "273561984169843275485297631398126547716458392542739816921684753637915428854372169",
+    "rating": 9,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nStarting clues:\nRow 4: c2 contains 9, c3 has 8, c5 has 2, c7 is 5\nRow 1: c7=9; c8 contains 8; c1: 2\nRow 2: c1 is 1, c8 has 7, c9 has 5.\nRow 3: c2 has 8 \u2022 c3 is 5 \u2022 c9: 1\nThe next lines add more givens that belong to the same initial board configuration.\nRow 5: c1 has 7, c6: 8, c9 has 2\nRow 6: c4: 7, c8 has 1, c7: 8\nRow 7: c3: 1 \u2022 c4=6 \u2022 c6 contains 4\nRow 8: c3 contains 7; c8 is 2\nRow 9: c2 contains 5 \u2022 c9: 9",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"2......981......75..85.....198..2..57....8..2...7.81...1.64........7..2..5......9\"}",
+    "predicted_grid": "2......981......75..85.....198..2..57....8..2...7.81...1.64........7..2..5......9"
+  },
+  {
+    "index": 4,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "......9..1..8.4..7.8...2...7.5.......1.5.7..44..2.......14.8..5....2.4..5...6..3.",
+    "solution": "342756918159834267687912543725643189816597324493281756231478695968325471574169832",
+    "rating": 18,
+    "nl_description": "Only the following cells are pre-filled. All other positions are intentionally left open for reasoning during solving.\n\nStarting clues:\nRow 8: c5 is 2; c7 is 4\nRow 6: c1 has 4; c4 contains 2\nRow 5: c2 is 1 \u2022 c4 has 5 \u2022 c6: 7 \u2022 c9: 4\nRow 1: c7: 9\nThe next lines add more givens that belong to the same initial board configuration.\nRow 2: c1=1 \u2022 c4=8 \u2022 c6: 4 \u2022 c9: 7\nRow 9: c1 contains 5, c5 contains 6, c8=3\nRow 4: c1=7 | c3 contains 5.\nRow 7: c4=4 \u2022 c6 is 8 \u2022 c9 has 5 \u2022 c3 has 1\nRow 3: c2: 8; c6=2",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".......9.1.8.4..7..8...2........7.5.....1.5.7.4..4..2....4..1.4.8..5..2..4.5..6.3.\"}",
+    "predicted_grid": ".......9.1.8.4..7..8...2........7.5.....1.5.7.4..4..2....4..1.4.8..5..2..4.5..6.3"
+  },
+  {
+    "index": 5,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "6.2.......8..2......9..528.........34....7.5...52..17....5.9..1..1.7.52....1....8",
+    "solution": "672893415584721369319645287127456893438917652965238174246589731891374526753162948",
+    "rating": 8,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nPreset cells:\nRow 1: c3=2 \u2022 c1 has 6\nRow 2: c2 has 8 | c5 contains 2\nRow 3: c6 contains 5 | c8: 8 | c3 has 9 | c7: 2\nRow 4: c9=3\nRow 5: c1 contains 4; c6 is 7; c8 contains 5\nRow 6: c3 contains 5 | c4 has 2 | c7: 1 | c8 is 7\nRow 7: c9=1 \u2022 c6 contains 9 \u2022 c4 has 5.\nRow 8: c7 contains 5 \u2022 c5 contains 7 \u2022 c3 has 1 \u2022 c8=2\nRow 9: c9 contains 8 \u2022 c4=1\n\nNo further preset values are assumed beyond the givens recorded above.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"6..2........8.2....9..582......3..4...7.5...52.17....5..9..1...1.752...1...8\"}",
+    "predicted_grid": "6..2........8.2....9..582......3..4...7.5...52.17....5..9..1...1.752...1...8....."
+  },
+  {
+    "index": 6,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "3...75.....54...9..7..6...3.....8...56....8....15...4...2......9..2..1.4....59.2.",
+    "solution": "319875462685432791274961583497618235563724819821593647152346978936287154748159326",
+    "rating": 113,
+    "nl_description": "This Sudoku starts with the following givens. Every listed entry is already present in the grid before any solving begins.\n\nStarting clues:\nRow 8: c4=2, c9=4, c7: 1, c1=9.\nRow 1: c1: 3; c5 has 7; c6 has 5.\nRow 2: c3 is 5; c4 is 4; c8 is 9\nRow 3: c9: 3, c2: 7, c5 contains 6\nRow 5: c1 contains 5 \u2022 c2: 6 \u2022 c7 is 8\nRow 6: c3 is 1, c4 contains 5, c8 is 4\nRow 9: c5 contains 5, c6 contains 9, c8=2\nRow 4: c6 is 8\nRow 7: c3 is 2\n\nThis completes the clue inventory for the initial board; all unlisted cells remain empty at the start.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"3....75.................5.4...9..7..6......3...5.6.....8....8...........1.5..4...2...........5.9..2.9..1..4\"}",
+    "predicted_grid": "3....75.................5.4...9..7..6......3...5.6.....8....8...........1.5..4..."
+  },
+  {
+    "index": 7,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "7....8.2.....6...5.95...6...4....3.91....4.8....3......7.4...1.4..8......21..7...",
+    "solution": "764538921318269745295741638642185379153974286987326154576493812439812567821657493",
+    "rating": 57,
+    "nl_description": "These are the clues already present in the grid. They form the fixed anchors from which the remaining cells must be deduced.\n\nInitial filled cells:\nRow 9: c6 is 7; c2=2; c3 has 1\nRow 8: c4 is 8, c1: 4.\nRow 7: c2=7 \u2022 c4 contains 4 \u2022 c8: 1\nRow 6: c4 contains 3\nMore pre-filled cells are listed next; they are consistent with the same underlying Sudoku instance.\nRow 5: c1: 1, c8: 8, c6=4\nRow 4: c2 has 4 | c9 has 9 | c7 has 3\nRow 3: c2=9 \u2022 c3 is 5 \u2022 c7: 6.\nRow 2: c5 has 6 \u2022 c9: 5\nRow 1: c8 contains 2, c6 has 8, c1 is 7",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"7.....82..6....5.95..6........4.3..91...4.8...3........7..4.1.4..8....21.7....\"}",
+    "predicted_grid": "7.....82..6....5.95..6........4.3..91...4.8...3........7..4.1.4..8....21.7......."
+  },
+  {
+    "index": 8,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..8.9.5.494.....7.5..1.....8..2..........9.6..9..3.4.8..3..6...4...5.3.6......2..",
+    "solution": "318697524946325871527148693851264937734589162692731458283916745479852316165473289",
+    "rating": 35,
+    "nl_description": "Clues by position:\nRow 9: c7 contains 2.\nThese fixed values continue to constrain the same starting grid and do not introduce a different puzzle state.\nRow 3: c1 contains 5, c4 contains 1\nRow 2: c1=9, c2: 4, c8 is 7\nRow 6: c2=9 | c5: 3 | c7 contains 4 | c9: 8.\nWhat follows is still part of the exact same set of preset clues, simply presented in continuing row blocks.\nRow 1: c7 has 5, c5 contains 9, c3 has 8, c9 contains 4\nRow 8: c5=5, c1 has 4, c9 is 6, c7=3.\nRow 5: c6 contains 9; c8 contains 6\nRow 4: c1 contains 8 \u2022 c4=2.\nRow 7: c3 contains 3 \u2022 c6 has 6",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..8.9..5494....7.5..1........8..2........9.6..9.3.4.8..3..6..4..5.3..6..2.....\"}",
+    "predicted_grid": "..8.9..5494....7.5..1........8..2........9.6..9.3.4.8..3..6..4..5.3..6..2........"
+  },
+  {
+    "index": 9,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..35..97.5.....2.......3..5..4..8.9..6...1...2..9....77..3....9..1.4.....8.....6.",
+    "solution": "813562974547189236692473185174628593369751428258934617726315849931846752485297361",
+    "rating": 14,
+    "nl_description": "Use these preset entries as the puzzle's starting point. Together they specify the same initial board configuration as the raw puzzle string.\n\nInitial filled cells:\nRow 8: c5=4; c3: 1\nRow 3: c9=5, c6 contains 3.\nRow 2: c1 has 5 \u2022 c7 contains 2\nRow 5: c6=1 \u2022 c2=6.\nRow 4: c6 contains 8, c3 contains 4, c8: 9.\nRow 9: c2=8; c8=6\nRow 6: c1 is 2, c9: 7, c4 has 9\nRow 1: c3 contains 3 | c4 has 5 | c7 contains 9 | c8 has 7\nRow 7: c1 contains 7 \u2022 c4 contains 3 \u2022 c9 contains 9.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..35.97....5..2........3..5..4.8..9...6..1....2..9..7.7..3....9.8.....6.........\"}",
+    "predicted_grid": "..35.97....5..2........3..5..4.8..9...6..1....2..9..7.7..3....9.8.....6.........."
+  },
+  {
+    "index": 10,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "...7...98...8.34..79...2..68....1..33.74.81....42........6.....2....7...47...58..",
+    "solution": "143756298562893417798142356829571643357468129614239785931684572285317964476925831",
+    "rating": 0,
+    "nl_description": "The initial Sudoku clues are listed here. Each clue corresponds directly to a fixed value in the starting board.\n\nPreset cells:\nRow 1: c4 is 7, c8: 9, c9=8.\nRow 2: c7=4 | c6 has 3 | c4 is 8\nRow 3: c1 contains 7 | c2 is 9 | c9=6 | c6 has 2\nRow 4: c1 is 8 \u2022 c6 is 1 \u2022 c9=3.\nThe next lines add more givens that belong to the same initial board configuration.\nRow 5: c7=1 | c1 contains 3 | c3=7 | c6: 8 | c4: 4\nRow 6: c3 is 4; c4 contains 2.\nRow 7: c4 has 6.\nRow 8: c6: 7; c1 has 2\nRow 9: c1 contains 4, c2 is 7, c6 has 5, c7 is 8",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"...7..989..83.4..79..2...68..6.1..33.74.81..4.2......6.......2..7...4.7..5.8..\"}",
+    "predicted_grid": "...7..989..83.4..79..2...68..6.1..33.74.81..4.2......6.......2..7...4.7..5.8....."
+  },
+  {
+    "index": 11,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "7..9....3..6.1...4.....6.1.....9.5..4.87....2.5...2.4..738...2.2.........84..9..7",
+    "solution": "715984263326517984849236715132498576468751392957362841673845129291673458584129637",
+    "rating": 9,
+    "nl_description": "These are the clues already present in the grid. They form the fixed anchors from which the remaining cells must be deduced.\n\nInitial filled cells:\nRow 8: c1=2.\nRow 3: c6 is 6, c8 contains 1\nRow 4: c5 is 9; c7 contains 5.\nRow 1: c9: 3; c1 has 7; c4=9\nRow 2: c3 is 6, c5: 1, c9=4\nRow 6: c8: 4, c6=2, c2 contains 5.\nRow 5: c9 contains 2, c3 has 8, c4: 7, c1 contains 4\nRow 7: c2 contains 7; c3=3; c4 contains 8; c8: 2.\nRow 9: c6 has 9, c2 has 8, c3 is 4, c9 contains 7\n\nThe list above finishes the fixed clues that define the puzzle's initial state.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"7..9....3.6.1...4..6..1....9..5.....48.7...2.5.2..4.....73.8.2.2....9...8.4..9.7\"}",
+    "predicted_grid": "7..9....3.6.1...4..6..1....9..5.....48.7...2.5.2..4.....73.8.2.2....9...8.4..9.7."
+  },
+  {
+    "index": 12,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "...5...4.97.12.8.........1..5...3..4.....2..8.1.4985.3.37.4....1.9.7....2.......9",
+    "solution": "361587942974126835528934617852613794493752168716498523637849251149275386285361479",
+    "rating": 4,
+    "nl_description": "Below is the complete list of pre-filled cells. No additional givens are implied beyond what is explicitly written.\n\nStarting clues:\nRow 8: c1=1 | c3=9 | c5 is 7\nRow 5: c6 is 2 \u2022 c9: 8.\nRow 1: c4: 5 \u2022 c8 contains 4\nRow 7: c2: 3 \u2022 c3 has 7 \u2022 c5 contains 4\nRow 6: c6 contains 8 | c5 contains 9 | c4 has 4 | c2=1 | c7 is 5 | c9 is 3.\nRow 9: c1: 2 \u2022 c9=9\nRow 3: c8 has 1.\nRow 2: c4 has 1 \u2022 c1 has 9 \u2022 c5: 2 \u2022 c2 is 7 \u2022 c7 is 8\nRow 4: c6 is 3; c9 is 4; c2 has 5",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"....5..4.9.71.28...........1..5...3..4.....2.8.14.958..3.7.4..1..9...7..2.....9\"}",
+    "predicted_grid": "....5..4.9.71.28...........1..5...3..4.....2.8.14.958..3.7.4..1..9...7..2.....9.."
+  },
+  {
+    "index": 13,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "9...3...1...6...4...8..1.....7.2.5..2....3..7.6.7...2..5....18.3....89....1.5...2",
+    "solution": "946832751512697348738541296187926534295483617463715829659274183324168975871359462",
+    "rating": 15,
+    "nl_description": "This Sudoku starts with the following givens. Every listed entry is already present in the grid before any solving begins.\n\nStarting clues:\nRow 1: c9 contains 1 | c1 contains 9 | c5: 3\nRow 4: c3 contains 7; c5 is 2; c7: 5.\nThese fixed values continue to constrain the same starting grid and do not introduce a different puzzle state.\nRow 5: c1 has 2 \u2022 c9: 7 \u2022 c6: 3.\nRow 6: c4 has 7, c8=2, c2=6\nRow 7: c8=8; c7: 1; c2 contains 5\nRow 8: c6 contains 8 | c7=9 | c1 is 3\nRow 9: c3: 1, c9=2, c5: 5\nRow 2: c4=6, c8 has 4\nRow 3: c3: 8 \u2022 c6 is 1.\n\nNo further preset values are assumed beyond the givens recorded above.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"9....3..1....6...4..8.1........7.2.5.2..3..7.6.7..2.....5..18..3...89..1.5..2\"}",
+    "predicted_grid": "9....3..1....6...4..8.1........7.2.5.2..3..7.6.7..2.....5..18..3...89..1.5..2...."
+  },
+  {
+    "index": 14,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".....8....7.3.....13..5....4...9.68.8......4.59...6.1....2.98.7..26..9...6.5.....",
+    "solution": "659478123274361598138952476427193685816725349593846712345219867782634951961587234",
+    "rating": 0,
+    "nl_description": "Below is the complete list of pre-filled cells. No additional givens are implied beyond what is explicitly written.\n\nInitial filled cells:\nRow 1: c6 is 8\nRow 2: c2 is 7, c4 is 3\nRow 5: c8 contains 4 | c1=8.\nRow 9: c2=6 | c4 contains 5.\nRow 3: c2: 3; c1 has 1; c5 contains 5.\nRow 8: c7: 9 \u2022 c4 is 6 \u2022 c3: 2.\nRow 4: c1 contains 4 | c5 is 9 | c8 is 8 | c7 is 6\nRow 6: c1 contains 5 \u2022 c2 contains 9 \u2022 c6: 6 \u2022 c8 has 1.\nRow 7: c4=2 | c6 contains 9 | c7 is 8 | c9=7\n\nTaken together, these lines fully describe the givens of the original puzzle and nothing else.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".....8...7.3........1.3.5....4..9.68.8....4..59..6.1...2...987..2.9..6.........\"}",
+    "predicted_grid": ".....8...7.3........1.3.5....4..9.68.8....4..59..6.1...2...987..2.9..6..........."
+  },
+  {
+    "index": 15,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".....8.69.7691.84.......1.7...5..7.1..9.........2..69.14..7......8...4...97..6..8",
+    "solution": "451738269376912845982654137624593781819467352735281694143875926568129473297346518",
+    "rating": 15,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nGiven entries:\nRow 1: c6: 8 \u2022 c8: 6 \u2022 c9 contains 9.\nRow 2: c4=9 | c2=7 | c7=8 | c3 is 6 | c8 contains 4 | c5 contains 1\nRow 3: c7: 1 \u2022 c9 is 7\nRow 4: c4 is 5 \u2022 c7=7 \u2022 c9 contains 1\nMore pre-filled cells are listed next; they are consistent with the same underlying Sudoku instance.\nRow 5: c3=9.\nRow 6: c4 contains 2, c7: 6, c8=9.\nRow 7: c1 has 1 | c2 has 4 | c5=7\nRow 8: c3=8, c7 has 4\nRow 9: c2 has 9 \u2022 c3=7 \u2022 c6 contains 6 \u2022 c9 is 8",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"......896.76.9184..1....7....5..71..9........2..69.14..7....8...4..9.7..6.8\"}",
+    "predicted_grid": "......896.76.9184..1....7....5..71..9........2..69.14..7....8...4..9.7..6.8......"
+  },
+  {
+    "index": 16,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "5.29......4...52....3.7..4...5.9...1.8.5...6.4....35..2.8..96......6......4..83..",
+    "solution": "512934786746185293893276145675892431381547962429613578238459617957361824164728359",
+    "rating": 8,
+    "nl_description": "Given entries:\nRow 9: c3 contains 4; c6 has 8; c7 is 3\nRow 7: c1 contains 2; c6=9; c3 contains 8; c7=6.\nRow 6: c1 contains 4, c6 is 3, c7: 5\nRow 4: c9 has 1, c5=9, c3 is 5\nThese fixed values continue to constrain the same starting grid and do not introduce a different puzzle state.\nRow 1: c4 has 9 \u2022 c1=5 \u2022 c3=2\nRow 8: c5 is 6.\nRow 3: c5 has 7 \u2022 c8 contains 4 \u2022 c3 is 3\nRow 2: c7 has 2 | c6=5 | c2 is 4\nRow 5: c2 contains 8 \u2022 c8 has 6 \u2022 c4 contains 5\n\nThese entries close the full set of starting givens for this Sudoku instance.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"5.29......4..5.2...3..7..4...5..9..1..8.5...6..4..3.5..2..8.9.6.......6...4.83..\"}",
+    "predicted_grid": "5.29......4..5.2...3..7..4...5..9..1..8.5...6..4..3.5..2..8.9.6.......6...4.83..."
+  },
+  {
+    "index": 17,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..9.......82.........65.4..........2........97...1....4.....7.......6.5....8.21..",
+    "solution": "649728531582431967137659428854967312213584679796213845421395786978146253365872194",
+    "rating": 0,
+    "nl_description": "The initial Sudoku clues are listed here. Each clue corresponds directly to a fixed value in the starting board.\n\nClues by position:\nRow 3: c4 has 6 | c5 contains 5 | c7 is 4.\nRow 9: c4=8 \u2022 c6 is 2 \u2022 c7: 1\nRow 2: c3 has 2 \u2022 c2 contains 8\nRow 6: c1 is 7 | c5 is 1\nRow 7: c7 is 7, c1=4.\nRow 8: c8: 5, c6=6\nRow 1: c3 contains 9\nThe next lines add more givens that belong to the same initial board configuration.\nRow 4: c9 contains 2\nRow 5: c9 has 9.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..9........................................................................4.......7....6..5.4....2....7.1...........9....8..2.1....6.5....\"}",
+    "predicted_grid": "..9........................................................................4....."
+  },
+  {
+    "index": 18,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..8..2...5...9...4.9.8..3...8....1..9......7..146..9...6..8..1....1....3....698..",
+    "solution": "148532769536791284297846351685973142923418576714625938369287415872154693451369827",
+    "rating": 26,
+    "nl_description": "The initial Sudoku clues are listed here. Each clue corresponds directly to a fixed value in the starting board.\n\nGiven entries:\nRow 6: c2 is 1; c3 is 4; c4 contains 6; c7 is 9\nRow 2: c1 contains 5 \u2022 c5: 9 \u2022 c9 is 4\nRow 3: c2 is 9, c4 has 8, c7 has 3\nRow 7: c8=1, c2 contains 6, c5 contains 8\nRow 9: c5=6, c6=9, c7: 8.\nRow 1: c3 has 8 | c6 is 2\nRow 4: c2=8, c7 has 1\nRow 5: c1 has 9 \u2022 c8 contains 7\nMore pre-filled cells are listed next; they are consistent with the same underlying Sudoku instance.\nRow 8: c4 contains 1; c9: 3",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..8..2............................................................................................\"}",
+    "predicted_grid": "..8..2..........................................................................."
+  },
+  {
+    "index": 19,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "5..4..21.....1.9.8..9.8..5..328.............2.6...4....4..9.5.1..15..82......2.49",
+    "solution": "586439217324715968719286453132857694495361782867924135243698571971543826658172349",
+    "rating": 38,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nPreset cells:\nRow 1: c8 is 1; c7 is 2; c1 has 5; c4: 4.\nRow 7: c5 contains 9; c7 is 5; c9 is 1; c2 is 4\nRow 8: c7 contains 8 | c3: 1 | c4 has 5 | c8=2\nThe next lines add more givens that belong to the same initial board configuration.\nRow 2: c5 is 1 | c7=9 | c9 has 8\nRow 3: c3: 9, c5 contains 8, c8=5.\nRow 4: c2=3 | c3 has 2 | c4 has 8\nRow 9: c6: 2; c8: 4; c9 has 9\nRow 6: c6 contains 4; c2 contains 6\nRow 5: c9: 2",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"5...4..21........19..8.9.8..5.328.............2.6...4...4..9.5.1.15.2...2..4.9\"}",
+    "predicted_grid": "5...4..21........19..8.9.8..5.328.............2.6...4...4..9.5.1.15.2...2..4.9..."
+  },
+  {
+    "index": 20,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".9...8.1.14..3.9....2.....39.67..3.......3...2...1..9.32..4...9.....51........42.",
+    "solution": "693578214147236985852491673986752341714963852235814796328147569479625138561389427",
+    "rating": 21,
+    "nl_description": "This Sudoku starts with the following givens. Every listed entry is already present in the grid before any solving begins.\n\nInitial filled cells:\nRow 1: c2=9 | c6=8 | c8: 1\nRow 2: c1=1 | c2 contains 4 | c5 contains 3 | c7 contains 9\nRow 3: c9=3, c3 is 2\nRow 4: c1 is 9, c3 is 6, c4 contains 7, c7: 3\nContinuing the inventory of givens, the remaining rows preserve the original puzzle definition.\nRow 5: c6: 3\nRow 6: c1 is 2; c5 contains 1; c8 has 9.\nRow 7: c1=3; c5 contains 4; c2=2; c9 has 9\nRow 8: c6=5; c7 contains 1\nRow 9: c7 contains 4 \u2022 c8 is 2",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\".9...8.1.14.3.9....2......39.67..3........3..2..1..9.32..4...9.....51....4.2.\"}",
+    "predicted_grid": ".9...8.1.14.3.9....2......39.67..3........3..2..1..9.32..4...9.....51....4.2....."
+  },
+  {
+    "index": 21,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "...2..84......9.....5.3...2...5......1..4..2...43.2.5..71...4..6......7...2.5...3",
+    "solution": "136275849428169537795834162267598314513647928984312756371926485659483271842751693",
+    "rating": 54,
+    "nl_description": "Here are the fixed clues for this Sudoku instance. They define the exact starting state and should be read as the authoritative givens.\n\nClues by position:\nRow 2: c6 contains 9.\nRow 1: c7 is 8; c4 is 2; c8: 4\nContinuing the inventory of givens, the remaining rows preserve the original puzzle definition.\nRow 6: c3=4 \u2022 c4 is 3 \u2022 c6 has 2 \u2022 c8 is 5\nRow 7: c2 has 7, c3: 1, c7: 4\nThe next lines add more givens that belong to the same initial board configuration.\nRow 9: c3 contains 2 \u2022 c9 is 3 \u2022 c5: 5\nRow 5: c5=4 \u2022 c8 contains 2 \u2022 c2: 1\nRow 4: c4: 5\nRow 3: c3 has 5; c5=3; c9: 2.\nRow 8: c1 contains 6 | c8 has 7.\n\nThis is the complete pre-filled configuration from which solving should proceed.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..2.4.84............5.3....2....5...........1..4..2..4.32..5..71....4..6......7...2..5..3\"}",
+    "predicted_grid": "..2.4.84............5.3....2....5...........1..4..2..4.32..5..71....4..6......7.."
+  },
+  {
+    "index": 22,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": ".6...2.7...48..1..7........9......63..12..4......93.......415....5..8..1...5...2.",
+    "solution": "569412378324876159718359642957184263831265497642793815273941586495628731186537924",
+    "rating": 50,
+    "nl_description": "The initial Sudoku clues are listed here. Each clue corresponds directly to a fixed value in the starting board.\n\nPreset cells:\nRow 1: c8 has 7 | c2=6 | c6 contains 2\nRow 2: c3: 4 | c4 is 8 | c7 contains 1\nRow 3: c1=7.\nRow 4: c1 is 9; c8=6; c9: 3\nRow 5: c3 has 1, c4 is 2, c7 contains 4\nRow 6: c5 contains 9; c6 has 3\nRow 7: c5 has 4 \u2022 c6 has 1 \u2022 c7 has 5\nRow 8: c3 contains 5 \u2022 c6 has 8 \u2022 c9=1\nRow 9: c4 has 5; c8 is 2",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..6...27..4.8..1.7........9......63..12.4.......93....415..5..8..1...5...2.\"}",
+    "predicted_grid": "..6...27..4.8..1.7........9......63..12.4.......93....415..5..8..1...5...2......."
+  },
+  {
+    "index": 23,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..28..3......3.754..5.476.8.13..9.87...42...9.26......1.92.5.3.5.867..1.....9...5",
+    "solution": "742856391681932754395147628413569287857423169926718543179285436538674912264391875",
+    "rating": 0,
+    "nl_description": "These are the clues already present in the grid. They form the fixed anchors from which the remaining cells must be deduced.\n\nPreset cells:\nRow 9: c9 has 5; c5 has 9\nRow 8: c1: 5; c3=8; c4: 6; c5: 7; c8 has 1.\nRow 7: c8: 3, c3 has 9, c1 contains 1, c6 has 5, c4: 2.\nRow 6: c3: 6 | c2 is 2.\nRow 5: c4: 4 \u2022 c5 is 2 \u2022 c9 contains 9\nRow 4: c2: 1; c3 contains 3; c6: 9; c8: 8; c9=7\nRow 3: c5 has 4; c6 has 7; c9 is 8; c3 contains 5; c7 has 6.\nRow 2: c5 has 3 | c7 is 7 | c8 has 5 | c9: 4\nRow 1: c4 contains 8 \u2022 c3=2 \u2022 c7 has 3.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..2.8..3......37454.5.47.68.13..9.87...4.2...92..6........1.52..8567.9...9...5..\"}",
+    "predicted_grid": "..2.8..3......37454.5.47.68.13..9.87...4.2...92..6........1.52..8567.9...9...5..."
+  },
+  {
+    "index": 24,
+    "model": "deepseek-ai/DeepSeek-V4-Pro",
+    "puzzle": "..5.......4.8..7....8.2..3.4.....5...5..9..288.25....7...71.2...2.9..87.6.......1",
+    "solution": "265374189341869752978125634496287513753691428812543967539718246124936875687452391",
+    "rating": 16,
+    "nl_description": "Preset cells:\nRow 1: c3 is 5.\nRow 4: c1 contains 4 | c7=5\nRow 9: c1 has 6 | c9=1.\nRow 2: c2 contains 4; c4: 8; c7 has 7\nRow 3: c3=8 | c5 is 2 | c8 has 3\nRow 7: c5 has 1; c7 has 2; c4 contains 7.\nRow 5: c2 is 5 \u2022 c5 has 9 \u2022 c8 has 2 \u2022 c9 is 8\nRow 6: c4=5, c1=8, c9 is 7, c3 contains 2\nRow 8: c2 is 2, c4=9, c7 is 8, c8 contains 7\n\nTaken together, these lines fully describe the givens of the original puzzle and nothing else.",
+    "parse_status": "json",
+    "task": "grid-parse",
+    "request_extra_body": {
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "response_text": "{\"grid\":\"..5........................................................................6........1\"}",
+    "predicted_grid": "..5........................................................................6....."
+  }
+]

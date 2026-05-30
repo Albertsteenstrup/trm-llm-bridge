@@ -1,0 +1,34 @@
+{
+  "split": "ood25",
+  "predictions_json": "/Users/albertsteenstrup/Desktop/ITU/4s/thesis/results/frontier_sudoku_builder/frontier_predictions_deepseek_v4pro_none_nvidia_ood25.json",
+  "stop_reason": "hit_5_errors_in_a_row",
+  "model": "deepseek-ai/deepseek-v4-pro",
+  "provider": "nvidia",
+  "request": {
+    "reasoning_effort": "none",
+    "stream": true,
+    "max_tokens": 8192,
+    "temperature": 0
+  },
+  "num_rows_recorded": 5,
+  "parseable_count": 0,
+  "parseable_rate": 0.0,
+  "api_error_count": 5,
+  "exact_count": 0,
+  "exact_match": 0.0,
+  "cell_accuracy": 0.0,
+  "valid_sudoku_count": 0,
+  "valid_sudoku_rate": 0.0,
+  "givens_consistent_count": 0,
+  "givens_consistent_rate": 0.0,
+  "answered_only": {
+    "num_answered": 0,
+    "exact_count": 0,
+    "exact_match": 0.0,
+    "cell_accuracy": 0.0,
+    "valid_sudoku_count": 0,
+    "valid_sudoku_rate": 0.0,
+    "givens_consistent_count": 0,
+    "givens_consistent_rate": 0.0
+  }
+}

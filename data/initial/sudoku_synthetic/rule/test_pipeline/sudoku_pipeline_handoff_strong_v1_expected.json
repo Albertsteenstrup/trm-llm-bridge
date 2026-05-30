@@ -1,0 +1,12 @@
+{
+  "selected_candidate": "delta",
+  "selector_code": 421,
+  "service": "heat_adapter",
+  "priority": "high",
+  "output_format": "graph",
+  "route_id": "R-452-13",
+  "checksum": 35336,
+  "gate": "REVIEW",
+  "cross_check": "gamma:288",
+  "final_phrase": "heat_adapter|high|graph|REVIEW"
+}

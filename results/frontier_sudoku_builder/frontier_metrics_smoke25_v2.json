@@ -1,0 +1,38 @@
+{
+  "input_json": "data/initial/sudoku_synthetic/llm/sudoku_nl_dataset_corrected2.json",
+  "baseline_metrics_json": null,
+  "baseline_pipeline_metrics": null,
+  "predictions_json": "results/frontier_sudoku_builder/frontier_predictions_smoke25_v2.json",
+  "models": {
+    "deepseek-ai/deepseek-v3.2": {
+      "num_examples": 25,
+      "api_error_count": 9,
+      "parse_failure_count": 1,
+      "solution_metrics": {
+        "num_examples": 25,
+        "structure_valid_rate": 0.6,
+        "strict_json_rate": 0.6,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.12493827160493827,
+        "format_valid_rate": 0.6,
+        "valid_sudoku_rate": 0.04,
+        "consistent_with_gold_givens_rate": 0.0
+      }
+    },
+    "minimaxai/minimax-m2.7": {
+      "num_examples": 25,
+      "api_error_count": 0,
+      "parse_failure_count": 0,
+      "solution_metrics": {
+        "num_examples": 25,
+        "structure_valid_rate": 1.0,
+        "strict_json_rate": 0.0,
+        "exact_match": 0.0,
+        "cell_accuracy": 0.11111111111111112,
+        "format_valid_rate": 1.0,
+        "valid_sudoku_rate": 0.0,
+        "consistent_with_gold_givens_rate": 0.0
+      }
+    }
+  }
+}

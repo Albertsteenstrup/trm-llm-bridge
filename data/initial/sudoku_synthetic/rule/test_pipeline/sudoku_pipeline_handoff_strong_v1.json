@@ -1,0 +1,90 @@
+[
+  {
+    "id": "sudoku_pipeline_handoff_strong_v1_0001",
+    "source_dataset": "data/initial/sudoku_synthetic/rule/train_translator/sudoku_nl_messy_10000_v1.json",
+    "source_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "selection_rule": "second-smallest selector_code = 100*r1c1 + 10*r5c5 + r9c9; tie_breaker = r2c8 + r8c2",
+    "prompt": "You are given a messy routing packet. The packet contains several unrelated questions and four candidate Sudoku tasks written as noisy natural-language board descriptions.\n\nImportant rules:\n- Do not output any solved Sudoku grid.\n- Row/column coordinates are 1-indexed. r3c7 means row 3, column 7.\n- The candidate descriptions use messy notation such as r1c2, row 1 col 2, cell(r1/c2), [r1,c2], and similar variants.\n- Some lines are duplicated, reordered, or irrelevant notes.\n- Solve every candidate Sudoku silently, because the final routing decision depends on comparing their solved grids.\n\nWarm-up distractors. Do not include these answers in the final output:\n1. What is 19 + 26?\n2. Alphabetize: validator, adapter, router, solver.\n3. Reverse the string BRIDGE.\n4. Count the vowels in \"specialist handoff contract\".\n5. If a scorer has precision 0.4 and recall 0.6, what is approximate F1?\n6. Convert \"native specialist output\" to uppercase.\n7. Which is larger: 0.207 or 0.27?\n8. Ignore these warm-up answers unless a final field explicitly asks for them.\n\nCandidate Sudoku tasks:\n\n--- CANDIDATE ALPHA ---\nThe following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.\n\nBRAIN DUMP OF SUDOKU GRID:\nvariant=columns_then_flat\nvertical scan:\nc1: Row 4, Col 1: 3 | Row 6, Col 1: 2\nCOL 2  Row 1, Col 2: 8, Row 9, Col 2: 3\ncol3: Row 3, Col 3: 3 / Row 4, Col 3: 1 / Row 7, Col 3: 8\nColumn 4: [r3,c4]=5 | [r5,c4]=9 | [r7,c4]=2 | [r9,c4]=6\ncol5: cell(r4,c5)=6  cell(r9,c5)=7  cell(r6,c5)=5\nColumn 6: Row 1, Col 6: 6 | Row 6, Col 6: 3 | Row 9, Col 6: 4 | Row 7, Col 6: 1\nnext col\nc7: cell(r1,c7)=7, cell(r4,c7)=9\nC8 -> r6c8=7 ; r3c8=6 ; r7c8=4 ; r1c8=2\nC9 -> r9c9=5  r4c9=2  r6c9=6  r3c9=9\nrandom givens:\nrow1 col2 is 8\ncell(r9,c9)=5\n[r4,c9]=2\nr4c5 -> 6\nrow 9 col 2 = 3\ncell(r4/c7)=9\ncell(r6,c1)=2\nRow 5, Col 4: 9 ;\nrow4 col3 is 1\ncell(r7/c4)=2\n[r7/c3]:8 !\nRow 9, Col 6: 4\ncell(r9/c5)=7\nlooks good\nr6 c8 has 7\nrow7 col8 is 4\n\nr4 c1 has 3\nrow1 col8 is 2\nline break\nr3c8 -> 6 (checked)\nr1 c7 has 7\n[r3/c9]:9 ;\nr7c6 -> 1\ncell(r3/c4)=5\n[r9/c4]:6\nrow 1 col 6 = 6 -> confirmed\nrow 6, column 5 contains 5\nr6 c9 has 6\ncell(r6/c6)=3\nr3c3 -> 3\nrow empties:\nRow 4: blanks at c2,c4,c6,c8\nRow 2 empty -> c1,c2,c3,c4,c5,c6,c7,c8,c9\nRow 9: blanks at c1,c3,c7,c8\nvertical stacks:\nStack 1: r7c3=8, r6c1=2, r4c3=1\ndone\n--- END CANDIDATE ALPHA ---\n--- CANDIDATE BETA ---\nThe following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.\n\nFIELD NOTES FROM INITIAL BOARD:\nvariant=rows_rows\nby rows:\nR1  c1=5  c2=3  c5=6\nRow 2: c3=4 / c9=6\nr3: c2=2 - c4=4 - c8=5\nR4  c3 -> 2  c8 -> 6  c5 -> 5\nRow 5: c6=9 - c2 is 6 - c4 is 1\nr6: c1 is 9  c4 is 6  c9 is 7\nrow7 - c3 -> 3 - c5 -> 4 - c8 -> 2\nr8 -> c4:8, c7 contains 1\nr9 -> c2 has 8, c6 has 7\nrowwise log:\nr1 -> c1 -> 5 - c2 -> 3 - c5 -> 6\nRow 2: c3:4 - c9 is 6\nr3: c4=4 ; c8 contains 5 ; c2 is 2\nr4: c5=5 ; c8=6 ; c3=2\nR5  c4 has 1, c2 has 6, c6 has 9\nrow6 - c1 is 9 / c4 is 6 / c9 is 7\nmoving on\nr7: c3=3 / c5:4 / c8 is 2\nROW 8: c4 is 8, c7 is 1\n\nROW 9: c2 is 8 ; c6 is 7\nrow-groups:\nBand 3: r8c4=8, r8c7=1, r7c8=2, r9c6=7, r9c2=8, r7c3=3\nBand 1: r3c2=2, r2c3=4, r2c9=6\nvertical stacks:\nStack 1: r6c1=9, r3c2=2, r4c3=2, r5c2=6, r9c2=8, r1c2=3, r2c3=4, r7c3=3\nthat's all givens\n--- END CANDIDATE BETA ---\n--- CANDIDATE GAMMA ---\nThe following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.\n\nfield notes from initial board:\nFLAT CLUE LIST:\ncell(r2/c6)=8\nrow 1, column 9 contains 2\n[r3/c5]:1  \nrow 8, column 6 contains 4\nr5 c8 has 7\nr1 c2 has 8\nr2c3=3\n[r4/c1]:9\nr7c3 -> 5\nr4 c8 has 5\nrow 5, column 4 contains 2\nrow1 col4 is 4\nr8 c9 has 8\nr3 c6 has 2 ?? no wait, yes\nrow 6 col 5 = 4 ;\nr6c2=6\n\nR3C3:9 !\n\nr5c1 -> 3  \ncell(r7/c8)=6\nrow8 col2 is 9\ncell(r9/c4)=6\nrow6 col9 is 1\nr9c7 -> 9\ncell(r9/c1)=7 -> confirmed\nflat clue list:\n[r4,c8]=5\n\nR1C4:4\n\nrow 2, column 3 contains 3\nr1c2 -> 8\ncell(r5/c1)=3 -> confirmed\nr7c8 -> 6\nr3c6 -> 2\n[r8/c2]:9\nr9c7=9\nalmost done\nr2 c6 has 8\nRow 8, Col 9: 8\nrow 5 col 8 = 7\nRow 1, Col 9: 2\ncell(r6/c2)=6\n[r7,c3]=5\nr9 c1 has 7\nRow 3, Col 3: 9\nR3C5:1\nr6c9 -> 1\nr9c4=6 -> confirmed\ncell(r4,c1)=9  \nRow 6, Col 5: 4\n[r5,c4]=2\ntypo? no\nRow 8, Col 6: 4\nrow empties:\nRow 8 empty -> c1,c3,c4,c5,c7,c8\nRow 7 empty -> c1,c2,c4,c5,c6,c7,c9\nRow 4 empty -> c2,c3,c4,c5,c6,c7,c9\nRow 2: blanks at c1,c2,c4,c5,c7,c8,c9\nblank slots by column:\nColumn 1: blanks at r1,r2,r3,r6,r7,r8\n\nCol 6 empty -> r1,r4,r5,r6,r7,r9\nColumn 3: blanks at r1,r4,r5,r6,r8,r9\nCol 4 empty -> r2,r3,r4,r6,r7,r8\nCol 8 empty -> r1,r2,r3,r6,r8,r9\nhorizontal bands:\nBand 1: r3c5=1, r3c6=2, r2c3=3, r1c2=8, r2c6=8, r3c3=9\n\nend of notes\n--- END CANDIDATE GAMMA ---\n--- CANDIDATE DELTA ---\nThe following is a messy natural-language description of one initial Sudoku board. It is not a solved grid. Extract the givens from the text, solve the board, and keep the solved grid available for later coordinate lookups.\n\nSUDOKU CLUES COPIED FROM SHEET:\nvariant=flat_rows_columns_flat\nRANDOM GIVENS:\nrow 9 col 5 = 8\nr9c8 -> 7\n\nr6 c2 has 5\n[r2,c9]=5\nrow 3, column 1 contains 8\ncell(r3/c6)=9\nn/a\nrow 7 col 2 = 8\nr4c7 -> 1 (checked)\nline break\ncell(r4,c5)=7\nr2 c1 has 2\nr5c1=3\nR1C2:6 -> confirmed\n[r4,c4]=3\nrow 1, column 8 contains 9\nr8c4 -> 1 (checked)\nR7C9:6\nr8 c5 has 4\nn/a\nr7c6 -> 2\nrow5 col8 is 6 #ok\nrow 9, column 3 contains 4\n\nrow 6, column 6 contains 8\nr3c7 -> 6\nrow 6, column 9 contains 9\nrow 3 col 3 = 5\nby rows:\nR4  c4 is 3, c5 is 7, c7 is 1\nr8 -> c5 is 4, c4 is 1\nR5  c1 -> 3 ; c8 -> 6\nRow 1: c2=6 | c8=9\nR2  c1 -> 2, c9 -> 5\nR6  c2 -> 5  c6 -> 8  c9 -> 9\nRow 3: c1 -> 8  c7 -> 6  c6 -> 9  c3 -> 5\nr9: c3 is 4  c5 is 8  c8 is 7\nwait, is that right? yes\nRow 7: c2 is 8 | c6 is 2 | c9 is 6\ncolumn-wise notes:\nColumn 1: [r2,c1]=2 | [r3,c1]=8 | [r5,c1]=3\nColumn 2: r1c2=6, r6c2=5, r7c2=8\nC3 -> cell(r3,c3)=5, cell(r9,c3)=4\nC4 -> [r4,c4]=3 ; [r8,c4]=1\nColumn 5: Row 4, Col 5: 7  Row 8, Col 5: 4  Row 9, Col 5: 8\n...\ncol6: [r3,c6]=9 ; [r6,c6]=8 ; [r7,c6]=2\nColumn 7: Row 4, Col 7: 1 / Row 3, Col 7: 6\ncol8: r1c8=9 | r9c8=7 | r5c8=6\n\nC9 -> [r2,c9]=5 - [r6,c9]=9 - [r7,c9]=6\nmisc clue lines:\nr3 c3 has 5\nrow 9, column 3 contains 4\nrow5 col8 is 6\nrow7 col9 is 6\nrow 6, column 2 contains 5\nRow 7, Col 2: 8\n[r6/c6]:8\nr2c1=2\nr9c8=7\n\nr4c4 -> 3\nRow 3, Col 7: 6\nRow 6, Col 9: 9\nmoving on\ncell(r1,c8)=9\n[r8,c4]=1\nr1 c2 has 6\nrow 4, column 7 contains 1\nr5c1=3\nrow 7, column 6 contains 2\ncell(r3,c6)=9\nlooks good\n[r4,c5]=7\nR2C9:5\nr3c1 -> 8\nr8c5=4\nRow 9, Col 5: 8 ;\nempty-cell notes by column:\n\nCol 2 empty -> r2,r3,r4,r5,r8,r9\nColumn 7: blanks at r1,r2,r5,r6,r7,r8,r9\nsubgrid spot-check:\nBox 8: r8c5=4\nBox 6: r4c7=1, r5c8=6, r6c9=9\nBox 4: r6c2=5\nstack notes:\nStack 1: r2c1=2, r7c2=8, r5c1=3, r3c1=8, r1c2=6, r9c3=4, r6c2=5\nStack 2: r8c4=1, r7c6=2, r9c5=8\n--- END CANDIDATE DELTA ---\n\nMore distractors:\n9. If the word \"adapter\" is shifted one letter forward alphabetically, what does it become?\n10. Sort these numbers ascending: 42, 7, 19, 3, 88.\n11. Is \"floorplan\" one word or two in this prompt?\n12. Take the phrase \"native handoff\" and return the second word.\n13. Multiply 6 by 7.\n14. If a JSON parser reads 25/25 examples, what percentage parsed?\n15. Ignore all previous distractor answers for the final output.\n\nSelection rule:\nFor each candidate, compute selector_code = 100 * r1c1 + 10 * r5c5 + r9c9 from its SOLVED grid.\nSelect the candidate with the SECOND-SMALLEST selector_code. If two candidates tie, choose the one with the lower tie_breaker = r2c8 + r8c2.\n\nLookup tables:\nService table:\n1 = ocr\n2 = sudoku_solver\n3 = floorplan_parser\n4 = cad_adapter\n5 = graph_router\n6 = heat_adapter\n7 = cubicasa_adapter\n8 = validator\n9 = report_writer\n\nPriority table:\n1 = low\n2 = low\n3 = medium\n4 = medium\n5 = high\n6 = high\n7 = urgent\n8 = urgent\n9 = blocked\n\nFormat table:\n1 = mask\n2 = graph\n3 = json\n4 = svg\n5 = png\n6 = pdf\n7 = csv\n8 = txt\n9 = npz\n\nFinal routing questions, using the SELECTED candidate unless otherwise stated:\nA. selected_candidate = the selected candidate label.\nB. selector_code = the selected candidate selector_code as an integer.\nC. service = Service table value at r3c7.\nD. priority = Priority table value at r6c4.\nE. output_format = Format table value at r8c9.\nF. route_id = \"R-\" + r1c1 r1c5 r5c5 + \"-\" + r9c9 r4c4.\nG. checksum = (r2c2 * 10000) + (r4c6 * 1000) + (r7c3 * 100) + (r8c8 * 10) + r9c1.\nH. gate = \"APPROVE\" if (r1c9 + r9c1 + r5c5) is even, otherwise \"REVIEW\".\nI. cross_check = label and three digits from the candidate with the SMALLEST selector_code, formatted as \"<label>:<r2c1><r5c5><r8c9>\".\nJ. final_phrase = service + \"|\" + priority + \"|\" + output_format + \"|\" + gate.\n\nReturn exactly this JSON object and nothing else:\n{\n  \"selected_candidate\": \"<label>\",\n  \"selector_code\": <integer>,\n  \"service\": \"<service>\",\n  \"priority\": \"<priority>\",\n  \"output_format\": \"<format>\",\n  \"route_id\": \"<route_id>\",\n  \"checksum\": <integer>,\n  \"gate\": \"<APPROVE_or_REVIEW>\",\n  \"cross_check\": \"<label:digits>\",\n  \"final_phrase\": \"<service|priority|format|gate>\"\n}\n",
+    "expected_answer": {
+      "selected_candidate": "delta",
+      "selector_code": 421,
+      "service": "heat_adapter",
+      "priority": "high",
+      "output_format": "graph",
+      "route_id": "R-452-13",
+      "checksum": 35336,
+      "gate": "REVIEW",
+      "cross_check": "gamma:288",
+      "final_phrase": "heat_adapter|high|graph|REVIEW"
+    },
+    "candidates": [
+      {
+        "label": "alpha",
+        "source_index": 0,
+        "puzzle": ".8...672............35...693.1.6.9.2...9.....2...53.76..82.1.4...........3.674..5",
+        "solution": "985316724612749538743582169371468952856927413294153876568291347427835691139674285",
+        "rating": 1,
+        "nl_description": "BRAIN DUMP OF SUDOKU GRID:\nvariant=columns_then_flat\nvertical scan:\nc1: Row 4, Col 1: 3 | Row 6, Col 1: 2\nCOL 2  Row 1, Col 2: 8, Row 9, Col 2: 3\ncol3: Row 3, Col 3: 3 / Row 4, Col 3: 1 / Row 7, Col 3: 8\nColumn 4: [r3,c4]=5 | [r5,c4]=9 | [r7,c4]=2 | [r9,c4]=6\ncol5: cell(r4,c5)=6  cell(r9,c5)=7  cell(r6,c5)=5\nColumn 6: Row 1, Col 6: 6 | Row 6, Col 6: 3 | Row 9, Col 6: 4 | Row 7, Col 6: 1\nnext col\nc7: cell(r1,c7)=7, cell(r4,c7)=9\nC8 -> r6c8=7 ; r3c8=6 ; r7c8=4 ; r1c8=2\nC9 -> r9c9=5  r4c9=2  r6c9=6  r3c9=9\nrandom givens:\nrow1 col2 is 8\ncell(r9,c9)=5\n[r4,c9]=2\nr4c5 -> 6\nrow 9 col 2 = 3\ncell(r4/c7)=9\ncell(r6,c1)=2\nRow 5, Col 4: 9 ;\nrow4 col3 is 1\ncell(r7/c4)=2\n[r7/c3]:8 !\nRow 9, Col 6: 4\ncell(r9/c5)=7\nlooks good\nr6 c8 has 7\nrow7 col8 is 4\n\nr4 c1 has 3\nrow1 col8 is 2\nline break\nr3c8 -> 6 (checked)\nr1 c7 has 7\n[r3/c9]:9 ;\nr7c6 -> 1\ncell(r3/c4)=5\n[r9/c4]:6\nrow 1 col 6 = 6 -> confirmed\nrow 6, column 5 contains 5\nr6 c9 has 6\ncell(r6/c6)=3\nr3c3 -> 3\nrow empties:\nRow 4: blanks at c2,c4,c6,c8\nRow 2 empty -> c1,c2,c3,c4,c5,c6,c7,c8,c9\nRow 9: blanks at c1,c3,c7,c8\nvertical stacks:\nStack 1: r7c3=8, r6c1=2, r4c3=1\ndone",
+        "selector_code": 925,
+        "tie_breaker": 5
+      },
+      {
+        "label": "beta",
+        "source_index": 1,
+        "puzzle": "53..6......4.....6.2.4...5...2.5..6..6.1.9...9..6....7..3.4..2....8..1...8...7...",
+        "solution": "531962784874315296629478351312754869467189532958623417793541628245896173186237945",
+        "rating": 36,
+        "nl_description": "FIELD NOTES FROM INITIAL BOARD:\nvariant=rows_rows\nby rows:\nR1  c1=5  c2=3  c5=6\nRow 2: c3=4 / c9=6\nr3: c2=2 - c4=4 - c8=5\nR4  c3 -> 2  c8 -> 6  c5 -> 5\nRow 5: c6=9 - c2 is 6 - c4 is 1\nr6: c1 is 9  c4 is 6  c9 is 7\nrow7 - c3 -> 3 - c5 -> 4 - c8 -> 2\nr8 -> c4:8, c7 contains 1\nr9 -> c2 has 8, c6 has 7\nrowwise log:\nr1 -> c1 -> 5 - c2 -> 3 - c5 -> 6\nRow 2: c3:4 - c9 is 6\nr3: c4=4 ; c8 contains 5 ; c2 is 2\nr4: c5=5 ; c8=6 ; c3=2\nR5  c4 has 1, c2 has 6, c6 has 9\nrow6 - c1 is 9 / c4 is 6 / c9 is 7\nmoving on\nr7: c3=3 / c5:4 / c8 is 2\nROW 8: c4 is 8, c7 is 1\n\nROW 9: c2 is 8 ; c6 is 7\nrow-groups:\nBand 3: r8c4=8, r8c7=1, r7c8=2, r9c6=7, r9c2=8, r7c3=3\nBand 1: r3c2=2, r2c3=4, r2c9=6\nvertical stacks:\nStack 1: r6c1=9, r3c2=2, r4c3=2, r5c2=6, r9c2=8, r1c2=3, r2c3=4, r7c3=3\nthat's all givens",
+        "selector_code": 585,
+        "tie_breaker": 13
+      },
+      {
+        "label": "gamma",
+        "source_index": 2,
+        "puzzle": ".8.4....2..3..8.....9.12...9......5.3..2...7..6..4...1..5....6..9...4..87..6..9..",
+        "solution": "186453792273968145549712683924137856351286479867549321435891267692374518718625934",
+        "rating": 20,
+        "nl_description": "field notes from initial board:\nFLAT CLUE LIST:\ncell(r2/c6)=8\nrow 1, column 9 contains 2\n[r3/c5]:1  \nrow 8, column 6 contains 4\nr5 c8 has 7\nr1 c2 has 8\nr2c3=3\n[r4/c1]:9\nr7c3 -> 5\nr4 c8 has 5\nrow 5, column 4 contains 2\nrow1 col4 is 4\nr8 c9 has 8\nr3 c6 has 2 ?? no wait, yes\nrow 6 col 5 = 4 ;\nr6c2=6\n\nR3C3:9 !\n\nr5c1 -> 3  \ncell(r7/c8)=6\nrow8 col2 is 9\ncell(r9/c4)=6\nrow6 col9 is 1\nr9c7 -> 9\ncell(r9/c1)=7 -> confirmed\nflat clue list:\n[r4,c8]=5\n\nR1C4:4\n\nrow 2, column 3 contains 3\nr1c2 -> 8\ncell(r5/c1)=3 -> confirmed\nr7c8 -> 6\nr3c6 -> 2\n[r8/c2]:9\nr9c7=9\nalmost done\nr2 c6 has 8\nRow 8, Col 9: 8\nrow 5 col 8 = 7\nRow 1, Col 9: 2\ncell(r6/c2)=6\n[r7,c3]=5\nr9 c1 has 7\nRow 3, Col 3: 9\nR3C5:1\nr6c9 -> 1\nr9c4=6 -> confirmed\ncell(r4,c1)=9  \nRow 6, Col 5: 4\n[r5,c4]=2\ntypo? no\nRow 8, Col 6: 4\nrow empties:\nRow 8 empty -> c1,c3,c4,c5,c7,c8\nRow 7 empty -> c1,c2,c4,c5,c6,c7,c9\nRow 4 empty -> c2,c3,c4,c5,c6,c7,c9\nRow 2: blanks at c1,c2,c4,c5,c7,c8,c9\nblank slots by column:\nColumn 1: blanks at r1,r2,r3,r6,r7,r8\n\nCol 6 empty -> r1,r4,r5,r6,r7,r9\nColumn 3: blanks at r1,r4,r5,r6,r8,r9\nCol 4 empty -> r2,r3,r4,r6,r7,r8\nCol 8 empty -> r1,r2,r3,r6,r8,r9\nhorizontal bands:\nBand 1: r3c5=1, r3c6=2, r2c3=3, r1c2=8, r2c6=8, r3c3=9\n\nend of notes",
+        "selector_code": 184,
+        "tie_breaker": 13
+      },
+      {
+        "label": "delta",
+        "source_index": 4,
+        "puzzle": ".6.....9.2.......58.5..96.....37.1..3......6..5...8..9.8...2..6...14......4.8..7.",
+        "solution": "461857293239461785875239614946375128318924567752618349183792456597146832624583971",
+        "rating": 13,
+        "nl_description": "SUDOKU CLUES COPIED FROM SHEET:\nvariant=flat_rows_columns_flat\nRANDOM GIVENS:\nrow 9 col 5 = 8\nr9c8 -> 7\n\nr6 c2 has 5\n[r2,c9]=5\nrow 3, column 1 contains 8\ncell(r3/c6)=9\nn/a\nrow 7 col 2 = 8\nr4c7 -> 1 (checked)\nline break\ncell(r4,c5)=7\nr2 c1 has 2\nr5c1=3\nR1C2:6 -> confirmed\n[r4,c4]=3\nrow 1, column 8 contains 9\nr8c4 -> 1 (checked)\nR7C9:6\nr8 c5 has 4\nn/a\nr7c6 -> 2\nrow5 col8 is 6 #ok\nrow 9, column 3 contains 4\n\nrow 6, column 6 contains 8\nr3c7 -> 6\nrow 6, column 9 contains 9\nrow 3 col 3 = 5\nby rows:\nR4  c4 is 3, c5 is 7, c7 is 1\nr8 -> c5 is 4, c4 is 1\nR5  c1 -> 3 ; c8 -> 6\nRow 1: c2=6 | c8=9\nR2  c1 -> 2, c9 -> 5\nR6  c2 -> 5  c6 -> 8  c9 -> 9\nRow 3: c1 -> 8  c7 -> 6  c6 -> 9  c3 -> 5\nr9: c3 is 4  c5 is 8  c8 is 7\nwait, is that right? yes\nRow 7: c2 is 8 | c6 is 2 | c9 is 6\ncolumn-wise notes:\nColumn 1: [r2,c1]=2 | [r3,c1]=8 | [r5,c1]=3\nColumn 2: r1c2=6, r6c2=5, r7c2=8\nC3 -> cell(r3,c3)=5, cell(r9,c3)=4\nC4 -> [r4,c4]=3 ; [r8,c4]=1\nColumn 5: Row 4, Col 5: 7  Row 8, Col 5: 4  Row 9, Col 5: 8\n...\ncol6: [r3,c6]=9 ; [r6,c6]=8 ; [r7,c6]=2\nColumn 7: Row 4, Col 7: 1 / Row 3, Col 7: 6\ncol8: r1c8=9 | r9c8=7 | r5c8=6\n\nC9 -> [r2,c9]=5 - [r6,c9]=9 - [r7,c9]=6\nmisc clue lines:\nr3 c3 has 5\nrow 9, column 3 contains 4\nrow5 col8 is 6\nrow7 col9 is 6\nrow 6, column 2 contains 5\nRow 7, Col 2: 8\n[r6/c6]:8\nr2c1=2\nr9c8=7\n\nr4c4 -> 3\nRow 3, Col 7: 6\nRow 6, Col 9: 9\nmoving on\ncell(r1,c8)=9\n[r8,c4]=1\nr1 c2 has 6\nrow 4, column 7 contains 1\nr5c1=3\nrow 7, column 6 contains 2\ncell(r3,c6)=9\nlooks good\n[r4,c5]=7\nR2C9:5\nr3c1 -> 8\nr8c5=4\nRow 9, Col 5: 8 ;\nempty-cell notes by column:\n\nCol 2 empty -> r2,r3,r4,r5,r8,r9\nColumn 7: blanks at r1,r2,r5,r6,r7,r8,r9\nsubgrid spot-check:\nBox 8: r8c5=4\nBox 6: r4c7=1, r5c8=6, r6c9=9\nBox 4: r6c2=5\nstack notes:\nStack 1: r2c1=2, r7c2=8, r5c1=3, r3c1=8, r1c2=6, r9c3=4, r6c2=5\nStack 2: r8c4=1, r7c6=2, r9c5=8",
+        "selector_code": 421,
+        "tie_breaker": 17
+      }
+    ],
+    "ranked_candidates": [
+      {
+        "label": "gamma",
+        "selector_code": 184,
+        "tie_breaker": 13
+      },
+      {
+        "label": "delta",
+        "selector_code": 421,
+        "tie_breaker": 17
+      },
+      {
+        "label": "beta",
+        "selector_code": 585,
+        "tie_breaker": 13
+      },
+      {
+        "label": "alpha",
+        "selector_code": 925,
+        "tie_breaker": 5
+      }
+    ]
+  }
+]

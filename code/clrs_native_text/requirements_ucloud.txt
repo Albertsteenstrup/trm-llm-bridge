@@ -1,0 +1,10 @@
+dm-clrs==2.0.3
+numpy
+tqdm
+wandb
+transformers
+accelerate
+sentencepiece
+safetensors
+python-dotenv
+openai
