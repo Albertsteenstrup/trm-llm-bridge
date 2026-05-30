@@ -385,14 +385,3 @@ These are expected on disk but not committed (see `.gitignore`):
 | `wandb/`, `logs/` | Run logs |
 | `paper/*.aux`, `paper/*.log`, … | LaTeX build artifacts (PDF is committed) |
 
----
-
-## Licensing
-
-Code in this repository is separate from third-party weights and datasets. Before
-redistributing any artifact, check upstream terms:
-
-- **Sudoku puzzles:** `sapientinc/sudoku-extreme` (Hugging Face)
-- **Qwen3-1.7B:** Qwen license on Hugging Face
-- **TRM:** [TinyRecursiveModels](https://github.com/SamsungSAILMontreal/TinyRecursiveModels)
-- **CLRS / ReNAR:** DeepMind CLRS + ReNAR project (`code/clrs_native_text/external/ReNAR/`)
